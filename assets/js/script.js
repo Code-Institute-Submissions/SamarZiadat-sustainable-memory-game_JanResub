@@ -73,3 +73,5 @@ const TREE_DATABASE = [
         "https://forestryandland.gov.scot/images/learn/treespecies/oak-botanical.jpg",
     },
   ];
+
+  const cardsContainer = document.querySelector("#cards"); // cardsContainer is cards div from index
