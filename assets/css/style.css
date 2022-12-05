@@ -54,7 +54,7 @@ body {
     text-align: center;
   }
   
-  /* Styling for restart button on game controls board */
+  /* Styling for buttons on game controls board */
   .button {
     display: inline-block;
     background-color: #c4961a;
@@ -67,8 +67,17 @@ body {
     cursor: pointer;
   }
   
-  /* Styling for restart button on game controls board - once hovered over */
+  /* Styling for buttons on game controls board - once hovered over */
   .button {
     color: white;
   }
+
+ /* Styling for grid layout where cards will be placed */
+  .grid {
+display: flex;
+flex-wrap: wrap;
+height: 1000px;
+width: 350px
+}
+
 
