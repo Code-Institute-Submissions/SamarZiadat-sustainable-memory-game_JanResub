@@ -29,3 +29,38 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  /* Styling for header in game controls board */
+#controls h1 {
+    display: none;
+  }
+  
+  /* Styling for score on game controls board */
+  #score {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #c4961a;
+    width: 75px;
+    height: 81px;
+    text-align: center;
+  }
+  
+  /* Styling for restart button on game controls board */
+  .button {
+    display: inline-block;
+    background-color: #c4961a;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fefae0;
+    height: 7ch;
+    width: 17ch;
+    border-radius: 99vh;
+    cursor: pointer;
+  }
+  
+  /* Styling for restart button on game controls board - once hovered over */
+  .button {
+    color: white;
+  }
+  
