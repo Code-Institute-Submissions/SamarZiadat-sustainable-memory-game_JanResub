@@ -1,0 +1,15 @@
+/* Basic page style resets */
+* {
+    box-sizing: border-box;
+}
+  
+body {
+  margin: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background: #021808;
+}
