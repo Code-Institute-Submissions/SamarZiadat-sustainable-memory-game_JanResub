@@ -75,54 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
         type: 'Coniferous',
         imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/hybrid-larch-botanical.jpg",
       },
-      {
-        name: 'Lodgepole pine',
-        description: 'A thin and narrow-crowned tree which grows to 40-50 metres. It has twisted yellowish-green needles found in pairs that measure 5–8 cm long and cones with prickly scales. The bark is variable but typically red-brown with fine curled flakes.',
-        type: 'Coniferous',
-        imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/lodgepole-pine-botanical.jpg",
-      },
-      {
-        name: 'Lodgepole pine',
-        description: 'A thin and narrow-crowned tree which grows to 40-50 metres. It has twisted yellowish-green needles found in pairs that measure 5–8 cm long and cones with prickly scales. The bark is variable but typically red-brown with fine curled flakes.',
-        type: 'Coniferous',
-        imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/lodgepole-pine-botanical.jpg",
-      },
-      {
-        name: 'Noble fir',
-        description: 'A handsome conifer which can reach 45 metres in height. It has long upswept bluish-grey needles and large upright cones with downturned feathery bracts. The smooth bark is pale grey to purplish.',
-        type: 'Coniferous',
-        imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/noble-fir-botanical.jpg",
-      },
-      {
-        name: 'Noble fir',
-        description: 'A handsome conifer which can reach 45 metres in height. It has long upswept bluish-grey needles and large upright cones with downturned feathery bracts. The smooth bark is pale grey to purplish.',
-        type: 'Coniferous',
-        imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/noble-fir-botanical.jpg",
-      },
-      {
-        name: 'Norway Spruce',
-        description: 'A conically shaped tree reaching up to 40 metres in height. It has long cylindrical brown cones which hang down and pointed mid-green needles standing on tiny pegs. The smooth bark is greyish-brown with a rusty tint.',
-        type: 'Coniferous',
-        imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/norway-spruce-botanical.jpg",
-      },
-      {
-        name: 'Norway Spruce',
-        description: 'A conically shaped tree reaching up to 40 metres in height. It has long cylindrical brown cones which hang down and pointed mid-green needles standing on tiny pegs. The smooth bark is greyish-brown with a rusty tint.',
-        type: 'Coniferous',
-        imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/norway-spruce-botanical.jpg",
-      },
-      {
-        name: 'Oak',
-        description: 'This broad spreading tree can reach up to 30 metres in Scotland. Most do not produce acorns until they are over 50 years old. The oak’s acorns are carried on long stalks or ‘peduncles’.',
-        type: 'Coniferous',
-        imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/oak-botanical.jpg",
-      },
-      {
-        name: 'Oak',
-        description: 'This broad spreading tree can reach up to 30 metres in Scotland. Most do not produce acorns until they are over 50 years old. The oak’s acorns are carried on long stalks or ‘peduncles’.',
-        type: 'Coniferous',
-        imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/oak-botanical.jpg",
-      },
     ];
   
     const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
@@ -131,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
       for (let i = 0; i < treeDatabase.length; i++) { // loop over treeDatabase
         var card = document.createElement('img') // for each card, create an image element called 'card'
-        card.setAttribute('src', 'https://forestryandland.gov.scot/images/Content_pages/1053161.jpg') // for each card, set a src attribute with a hyperlink value
+        card.setAttribute('src', 'https://forestryandland.gov.scot/images/learn/treespecies/ash-botanical.jpg') // for each card, set a src attribute with a hyperlink value
         card.setAttribute('data-id', i) // give each card a data ID to loop (0 to last card in array)
         //card.addEventListener('click', flipcard) ---> event listener to invoke as yet undefined card flipcard function when card is clicked
         grid.appendChild(card) // all these cards are placed in HTML div called grid as grid's children
