@@ -13,3 +13,19 @@ body {
   background-repeat: no-repeat;
   background: #021808;
 }
+
+/* Styling for game controls board */
+#controls {
+    margin: 20px auto;
+    width: 350px;
+    height: 120px;
+    background-color: #606c38;
+    padding: 20px 50px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 0;
+    top: 30px;
+    left: calc(50% - 175px);
+    display: flex;
+    justify-content: space-between;
+  }
