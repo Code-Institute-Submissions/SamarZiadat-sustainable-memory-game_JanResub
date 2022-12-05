@@ -92,9 +92,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   
-    //check your matches
+    // check for matches
+    function checkForMatch() {
+        var cards = document.querySelectorAll('img') pick out all the iamages created in function createBoard and call them cards
+        const optionOneId = cardsChosenId[0] // pulling first value in array and assign it to const optionOneId
+        const optionTwoId = cardsChosenId[1] // pulling second value in array and assign it to const optionTwoId
+        if (cardsChosen[0] === cardsChosen[1]) // Check that furst item in array equals second item in const
+        alert('You found a match!') // if answer is true, alert will pop up
+    }
 
-    //flip your card
+
+    // flip chosen card
     function flipCard() {
         var cardId = this.getAttribute('data-id') // get data-id attribute produced in createBoard function
         cardsChosen.push(treeDatabase[cardId].name) // push the cards from the treeDatabse based on their card ID; once this card is located we will get its name
