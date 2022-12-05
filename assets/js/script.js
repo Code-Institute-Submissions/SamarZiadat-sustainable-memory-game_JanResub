@@ -78,6 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
   
     const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
+    var cardsChosen = [] // empty array called cardsChosen
+    var cardsChosenId = [] // empty array to push card ID for cardsChosen
   
     // Game board 
     function createBoard() {
@@ -89,7 +91,17 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(card) // all these cards are placed in HTML div called grid as grid's children
       }
     }
-
-    createBoard()
   
+    //check your matches
+
+    //flip your card
+    function flipCard() {
+        var cardId = this.getAttribute('data-id') // get data-id attribute produced in createBoard function
+        cardsChosen.push(treeDatabase[cardId].name) // push the cards from the treeDatabse based on their card ID; once this card is located we will get its name
+        cardsChosenId.push(cardId) // push card ID into seperate array called cardsChosenID
+        this.setAttribute('src', cardArray[cardID].img) // add an image to card selected to flip based on its card ID
+        if (cards.Chosen.length === 2) { // if cards chosen is 2 cards
+            setTimeout(checkforMatch, 500) // after 500 milliseconds the two cards will be checked if they are a match
+        }
+    }
 })
