@@ -74,8 +74,22 @@
   
   /* Styling for game board where cards will lay in a grid format */
   .grid {
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
-    width: 600px;
+    justify-content: center;
+    margin: 20px auto;
+    width: 350px;
+    height: fit-content;
+    top: 125px;
+    left: calc(50% - 175px);
+    background: #606c38;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+
+  img {
+    position: relative;
+    width: 100px;
+    box-shadow: 1px 1px 20px 0px rgb(0 0 0 / 60%);
   }

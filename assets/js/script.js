@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
       for (let i = 0; i < treeDatabase.length; i++) { // loop over treeDatabase
         var card = document.createElement('img') // for each card, create an image element called 'card'
-        card.setAttribute('src', 'https://forestryandland.gov.scot/images/learn/treespecies/ash-botanical.jpg') // for each card, set a src attribute with a hyperlink value
+        card.setAttribute('src', 'assets/images/card-back.jpg') // for each card, set a src attribute with a hyperlink value
         card.setAttribute('data-id', i) // give each card a data ID to loop (0 to last card in array)
         //card.addEventListener('click', flipcard) ---> event listener to invoke as yet undefined card flipcard function when card is clicked
         grid.appendChild(card) // all these cards are placed in HTML div called grid as grid's children
