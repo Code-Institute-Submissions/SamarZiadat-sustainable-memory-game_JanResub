@@ -125,11 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     ];
   
-    const grid = document.querySelector.('.grid'); // the grid element in the index file is the gameboard where cards will lay
+    const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
   
     // Game board 
     function createBoard() {
-      for (let i = 0; i < treeDatabase.length, i++) { // loop over treeDatabase
+      for (let i = 0; i < treeDatabase.length; i++) { // loop over treeDatabase
         var card = document.createElement('img') // for each card, create an image element called 'card'
         card.setAttribute('src', 'https://forestryandland.gov.scot/images/Content_pages/1053161.jpg') // for each card, set a src attribute with a hyperlink value
         card.setAttribute('data-id', i) // give each card a data ID to loop (0 to last card in array)
@@ -138,6 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-createBoard()
+    createBoard()
   
 })
