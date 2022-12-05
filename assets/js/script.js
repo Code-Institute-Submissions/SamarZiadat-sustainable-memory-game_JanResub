@@ -125,14 +125,14 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     ];
   
-    const grid = document.querySelector.('.grid'); // grid is game board from HTML where cards will lay on the game console
+    const grid = document.querySelector.('.grid'); // the grid element in the index file is the gameboard where cards will lay
   
     // Game board 
     function createBoard() {
       for (let i = 0; i < treeDatabase.length, i++) { // loop over treeDatabase
-        var card = document.createElement('img') // for each card, create an image element and call this element card
-        card.setAttribute('img src', 'https://forestryandland.gov.scot/images/Content_pages/1053161.jpg') // for each card, set an image src attribute with link to image
-        card.setAttribute('data-id', i) // give each card a data ID so they loop from 0-11 (to display 12 cards)
+        var card = document.createElement('img') // for each card, create an image element called 'card'
+        card.setAttribute('src', 'https://forestryandland.gov.scot/images/Content_pages/1053161.jpg') // for each card, set a src attribute with a hyperlink value
+        card.setAttribute('data-id', i) // give each card a data ID to loop (0 to last card in array)
         //card.addEventListener('click', flipcard) ---> event listener to invoke as yet undefined card flipcard function when card is clicked
         grid.appendChild(card) // all these cards are placed in HTML div called grid as grid's children
       }
