@@ -76,6 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/hybrid-larch-botanical.jpg",
       },
     ];
+
+    treeDatabase.sort()) => 0.5 - Math.random(() // shuffle the cards via Math.random
   
     const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
     const resultDisplay = document.querySelector('#result') // pick out span element with id 'result' from HTML
