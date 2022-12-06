@@ -132,7 +132,7 @@ let cardId = this.getAttribute('data-id') // get data-id attribute produced in c
 cardsChosen.push(treeDatabase[cardId].name) // push the cards from the treeDatabse based on their card ID; once this card is located we will get its name
 cardsChosenId.push(cardId) // push card ID into seperate array called cardsChosenID
 this.setAttribute('src', treeDatabase[cardId].imgLink) // add an image to card selected to flip based on its card ID
-if (cards.Chosen.length === 2) { // if cards chosen is 2 cards
+if (cardsChosen.length === 2) { // if cards chosen is 2 cards
   setTimeout(checkForMatch, 500) // after 500 milliseconds the two cards will be checked if they are a match
 }
 }
