@@ -88,13 +88,20 @@ let cardsChosenId = [] // empty array to push card ID for cardsChosen
 let cardsWon = []
 
 // Game board 
+// 1. Loop over treeDatabase
+// 2. For each card, create an image element called 'card'
+// 3. For each card, set a src attribute with value linking to card-back image
+// 4. Give each card a data ID to loop (0 to last card in array)
+// 5. When cards are clicked, they flip over 
+// 6. All these cards are placed in HTML div called grid as grid's children
+
 function createBoard() {
-  for (let i = 0; i < treeDatabase.length; i++) { // loop over treeDatabase
-    let card = document.createElement('img') // for each card, create an image element called 'card'
-    card.setAttribute('src', 'assets/images/card-back.jpg') // for each card, set a src attribute with value linking to card-back image
-    card.setAttribute('data-id', i) // give each card a data ID to loop (0 to last card in array)
+  for (let i = 0; i < treeDatabase.length; i++) { 
+    let card = document.createElement('img') 
+    card.setAttribute('src', 'assets/images/card-back.jpg') 
+    card.setAttribute('data-id', i) 
     card.addEventListener('click', flipCard)
-    grid.appendChild(card) // all these cards are placed in HTML div called grid as grid's children
+    grid.appendChild(card) 
   }
 }
 
@@ -106,34 +113,51 @@ function setupGame() {
   cardsWon = [];
 }
 
-// Check for matches
+// Check for match
+// 1. Pick out all the images created in function createBoard and call them cards
+// 2. Pull first value in array and assign it to const optionOneId
+// 3. Pull second value in array and assign it to const optionTwoId
+// 4. Check that first item in array equals second item in const, if answer is true, alert will pop up
+// Matched cards will be pushed to cardsWon array to be stored
+// 5. If cards don't match, flip cards back over to be played again and alert user
+// Clear cardsChosen and cardsChosenId so we're ready to start flipping again
+// 6. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
+
 function checkForMatch() {
-  let cards = document.querySelectorAll('img') // pick out all the images created in function createBoard and call them cards
-  const optionOneId = cardsChosenId[0] // pulling first value in array and assign it to const optionOneId
-  const optionTwoId = cardsChosenId[1] // pulling second value in array and assign it to const optionTwoId
-  if (cardsChosen[0] === cardsChosen[1]) { // Check that first item in array equals second item in const
-    alert('You found a match!') // if answer is true, alert will pop up
-  cardsWon.push(cardsChosen) // push chosen cards to this array to be stored
+  let cards = document.querySelectorAll('img') 
+  const optionOneId = cardsChosenId[0] 
+  const optionTwoId = cardsChosenId[1] 
+  if (cardsChosen[0] === cardsChosen[1]) { 
+    alert('You found a match!')
+    cardsWon.push(cardsChosen)
 } else {
-  cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg') // if cards don't match, flip card back over to be played again
-  cards(optionTwoId).setAttribute('src', 'assets/images/card-back.jpg') // if cards don't match, flip card back over to be played again
-  alert('Sorry, try again!') // after cards are flipped back over, alert to say try again
+  cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg') 
+  cards(optionTwoId).setAttribute('src', 'assets/images/card-back.jpg') 
+  alert('Sorry, try again!') 
 }
-cardsChosen = [] // so we're ready to start flipping again
-cardsChosenId = [] // so we're ready to start flipping again
-resultDisplay.textContent = cardsWon.length // pass through how many times we've stored something in our cardsWon array to generate a score (so, 1 point per match)
-if (cardsWon.length === treeDatabase.length / 2) // if amount cardsWon deeply equals (the amount cards in our database/2), we know we have won
-  resultDisplay.textContent = 'Congrats, you matched all the cards!' // alert the user that they have won via the browser
+cardsChosen = [] 
+cardsChosenId = [] 
+resultDisplay.textContent = cardsWon.length
+if (cardsWon.length === treeDatabase.length/2) {
+  resultDisplay.textContent = 'Congrats, you matched all the cards!' 
+}
 }
 
 // Flip chosen card
+// 1. Get data-id attribute that was produced in the createBoard function
+// 2. Push the cards from the treeDatabase based on their card ID 
+// Once this card is located we will get its name
+// 3. Push card ID into separate array called cardsChosenId
+// 4. Add an image to card selected, to flip it based on its card ID
+// 5. If cards chosen is now 2 cards, the two cards will be checked if they are a match (after a 500 millisecond wait)
+
 function flipCard() {
-let cardId = this.getAttribute('data-id') // get data-id attribute produced in createBoard function
-cardsChosen.push(treeDatabase[cardId].name) // push the cards from the treeDatabse based on their card ID; once this card is located we will get its name
-cardsChosenId.push(cardId) // push card ID into seperate array called cardsChosenID
-this.setAttribute('src', treeDatabase[cardId].imgLink) // add an image to card selected to flip based on its card ID
-if (cardsChosen.length === 2) { // if cards chosen is 2 cards
-  setTimeout(checkForMatch, 500) // after 500 milliseconds the two cards will be checked if they are a match
+let cardId = this.getAttribute('data-id') 
+cardsChosen.push(treeDatabase[cardId].name)
+cardsChosenId.push(cardId)
+this.setAttribute('src', treeDatabase[cardId].imgLink) 
+if (cardsChosen.length === 2) { 
+  setTimeout(checkForMatch, 500)
 }
 }
 
