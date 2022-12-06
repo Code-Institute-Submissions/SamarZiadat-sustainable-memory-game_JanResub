@@ -90,7 +90,7 @@ let cardsWon = []
 // Game board 
 function createBoard() {
   for (let i = 0; i < treeDatabase.length; i++) { // loop over treeDatabase
-    let card = document.createElement('img') // for each card, create an image element called 'card'
+    let card = document.createElement('imgLink') // for each card, create an image element called 'card'
     card.setAttribute('src', 'assets/images/card-back.jpg') // for each card, set a src attribute with a hyperlink value
     card.setAttribute('data-id', i) // give each card a data ID to loop (0 to last card in array)
     card.addEventListener('click', flipCard)
@@ -108,7 +108,7 @@ function setupGame() {
 
 // Check for matches
 function checkForMatch() {
-  let cards = document.querySelectorAll('img') // pick out all the images created in function createBoard and call them cards
+  let cards = document.querySelectorAll('imgLink') // pick out all the images created in function createBoard and call them cards
   const optionOneId = cardsChosenId[0] // pulling first value in array and assign it to const optionOneId
   const optionTwoId = cardsChosenId[1] // pulling second value in array and assign it to const optionTwoId
   if (cardsChosen[0] === cardsChosen[1]) { // Check that first item in array equals second item in const
