@@ -1,7 +1,10 @@
 /* Basic page style resets */
 * {
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
   
   body {
     margin: 50px;
