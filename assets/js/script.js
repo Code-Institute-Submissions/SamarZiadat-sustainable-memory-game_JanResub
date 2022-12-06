@@ -75,21 +75,21 @@ const treeDatabase = [{
 },
 ];
 
-sort( () => 0.5 - Math.random() ) // shuffle the cards via Math.random
+
 
 // Game settings
 const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
 const resultDisplay = document.querySelector('#result') // pick out span element with id 'result' from HTML
 
 // Variables to keep track of game state
-var cardsChosen = [] // empty array called cardsChosen
-var cardsChosenId = [] // empty array to push card ID for cardsChosen
-var cardsWon = []
+let cardsChosen = [] // empty array called cardsChosen
+let cardsChosenId = [] // empty array to push card ID for cardsChosen
+let cardsWon = []
 
 // Game board 
 function createBoard() {
   for (let i = 0; i < treeDatabase.length; i++) { // loop over treeDatabase
-    var card = document.createElement('img') // for each card, create an image element called 'card'
+    let card = document.createElement('img') // for each card, create an image element called 'card'
     card.setAttribute('src', 'assets/images/card-back.jpg') // for each card, set a src attribute with a hyperlink value
     card.setAttribute('data-id', i) // give each card a data ID to loop (0 to last card in array)
     //card.addEventListener('click', flipcard) ---> event listener to invoke as yet undefined card flipcard function when card is clicked
@@ -107,7 +107,7 @@ function setupGame() {
 
 // Check for matches
 function checkForMatch() {
-  var cards = document.querySelectorAll('img') // pick out all the images created in function createBoard and call them cards
+  let cards = document.querySelectorAll('img') // pick out all the images created in function createBoard and call them cards
   const optionOneId = cardsChosenId[0] // pulling first value in array and assign it to const optionOneId
   const optionTwoId = cardsChosenId[1] // pulling second value in array and assign it to const optionTwoId
   if (cardsChosen[0] === cardsChosen[1]) { // Check that first item in array equals second item in const
@@ -127,7 +127,7 @@ if (cardsWon.length === treeDatabase.length / 2) // if amount cardsWon deeply eq
 
 // Flip chosen card
 function flipCard() {
-var cardId = this.getAttribute('data-id') // get data-id attribute produced in createBoard function
+let cardId = this.getAttribute('data-id') // get data-id attribute produced in createBoard function
 cardsChosen.push(treeDatabase[cardId].name) // push the cards from the treeDatabse based on their card ID; once this card is located we will get its name
 cardsChosenId.push(cardId) // push card ID into seperate array called cardsChosenID
 this.setAttribute('src', cardArray[cardID].img) // add an image to card selected to flip based on its card ID
