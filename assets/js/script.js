@@ -75,7 +75,8 @@ const treeDatabase = [{
 },
 ];
 
-
+// Shuffle cards
+sort( () => 0.5 - Math.random() )
 
 // Game settings
 const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
