@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
   
     const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
+    const resultDisplay = document.querySelector('#result') // pick out span element with id 'result' from HTML
     var cardsChosen = [] // empty array called cardsChosen
     var cardsChosenId = [] // empty array to push card ID for cardsChosen
     var cardsWon = []
@@ -108,7 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     cardsChosen = [] // so we're ready to start flipping again
     cardsChosenId = [] // so we're ready to start flipping again
-    }
+    resultDisplay.textContent = cardsWon.length // pass through how many times we've stored something in our cardsWon array to generate a score (so, 1 point per match)
+    if (cardsWon.length === treeDatabase.length/2) // if amount cardsWon deeply equals (the amount cards in our database/2), we know we have won
+    resultDisplay.textContent = 'Congrats, you matched all the cards!' // alert the user that they have won via the browser
+  }
 
 
     // flip chosen card
