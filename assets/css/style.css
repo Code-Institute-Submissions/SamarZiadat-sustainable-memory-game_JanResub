@@ -5,98 +5,111 @@
   border: none;
   box-sizing: border-box;
 }
-  
-  body {
-    margin: 50px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-repeat: no-repeat;
-    background: #021808;
-  }
-  
-  /* Styling for game controls board */
-  #controls {
-    margin: 20px auto;
-    width: 350px;
-    height: 760px;
-    background-color: #606c38;
-    padding: 20px 50px;
-    border-radius: 15px;
-    position: absolute;
-    z-index: 0;
-    top: 30px;
-    left: calc(50% - 175px);
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* Styling for header in game controls board */
-  #controls h1 {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 60px;
-    color: #c4961a;
-    width: 75px;
-    height: 81px;
-    text-align: center;
-  }
-  
-  /* Styling for score on game controls board */
-  #score {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 60px;
-    color: #c4961a;
-    width: 75px;
-    height: 81px;
-    text-align: center;
-  }
-  
-  /* Styling for buttons on game controls board */
-  .button {
-    display: inline-block;
-    background-color: #c4961a;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fefae0;
-    height: 7ch;
-    width: 17ch;
-    border-radius: 99vh;
-    cursor: pointer;
-  }
-  
-  /* Styling for buttons on game controls board - once hovered over */
-  .button {
-    color: white;
-  }
-  
-  /* Styling for game board where cards will lay in a grid format */
+
+body {
+  margin: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background: #021808;
+}
+
+/* Styling for game controls board */
+#controls {
+  margin: 20px auto;
+  width: 350px;
+  height: 760px;
+  background-color: #606c38;
+  padding: 20px 50px;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 0;
+  top: 30px;
+  left: calc(50% - 175px);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for header in game controls board */
+#controls h1 {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #c4961a;
+  width: 75px;
+  height: 81px;
+  text-align: center;
+}
+
+/* Styling for score on game controls board */
+#score {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #c4961a;
+  width: 75px;
+  height: 81px;
+  text-align: center;
+}
+
+/* Styling for buttons on game controls board */
+.button {
+  display: inline-block;
+  background-color: #c4961a;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fefae0;
+  height: 7ch;
+  width: 17ch;
+  border-radius: 99vh;
+  cursor: pointer;
+}
+
+/* Styling for buttons on game controls board - once hovered over */
+.button {
+  color: white;
+}
+
+/* Styling for game board where cards will lay in a grid format */
+.grid {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  width: 350px;
+  height: fit-content;
+  top: 125px;
+  left: calc(50% - 175px);
+  background: #606c38;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+img {
+  position: relative;
+  width: 100px;
+  box-shadow: 1px 1px 20px 0px rgb(0 0 0 / 60%);
+  border-radius: 20px;
+  border-color: #fefae0;
+  border-style: solid;
+  border-width: 2px;
+}
+
+@media only screen and (min-width: 1000px) {
   .grid {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px auto;
-    width: 350px;
-    height: fit-content;
-    top: 125px;
-    left: calc(50% - 175px);
-    background: #606c38;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
+    width: 500px;
+    left: calc(50% - 250px);
   }
 
-  img {
-    position: relative;
-    width: 100px;
-    box-shadow: 1px 1px 20px 0px rgb(0 0 0 / 60%);
-    border-radius: 20px;
-    border-color: #fefae0;
-    border-style: solid;
-    border-width: 2px;
+  #controls {
+    width: 500px;
+    height: 615px;
+    left: calc(50% - 250px);
   }
+}
