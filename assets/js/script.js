@@ -120,7 +120,7 @@ function setupGame() {
 // 4. Check that first item in array equals second item in const, if answer is true, alert will pop up
 // Matched cards will be pushed to cardsWon array to be stored
 // 5. If cards don't match, flip cards back over to be played again and alert user
-// Clear cardsChosen and cardsChosenId so we're ready to start flipping again
+// 6. Clear cardsChosen and cardsChosenId so we're ready to start flipping again
 // 6. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
 
 function checkForMatch() {
@@ -150,7 +150,7 @@ if (cardsWon.length === treeDatabase.length/2) {
 // 5. If cards chosen is now 2 cards, the two cards will be checked if they are a match (after a 500 millisecond wait)
 
 function flipCard() {
-let cardId = this.getAttribute('data-id') 
+let cardId = this.getAttribute('data-id')
 cardsChosen.push(treeDatabase[cardId].name)
 cardsChosenId.push(cardId)
 this.setAttribute('src', treeDatabase[cardId].imgLink) 
