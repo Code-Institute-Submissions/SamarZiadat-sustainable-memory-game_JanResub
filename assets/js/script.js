@@ -131,7 +131,7 @@ function flipCard() {
 let cardId = this.getAttribute('data-id') // get data-id attribute produced in createBoard function
 cardsChosen.push(treeDatabase[cardId].name) // push the cards from the treeDatabse based on their card ID; once this card is located we will get its name
 cardsChosenId.push(cardId) // push card ID into seperate array called cardsChosenID
-this.setAttribute('src', treeDatabase[cardId].img) // add an image to card selected to flip based on its card ID
+this.setAttribute('src', treeDatabase[cardId].imgLink) // add an image to card selected to flip based on its card ID
 if (cards.Chosen.length === 2) { // if cards chosen is 2 cards
   setTimeout(checkforMatch, 500) // after 500 milliseconds the two cards will be checked if they are a match
 }
