@@ -75,7 +75,7 @@ const treeDatabase = [{
 },
 ];
 
-treeDatabase.sort()) => 0.5 - Math.random(() // shuffle the cards via Math.random
+sort( () => 0.5 - Math.random() ) // shuffle the cards via Math.random
 
 // Game settings
 const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
@@ -110,7 +110,7 @@ function checkForMatch() {
   var cards = document.querySelectorAll('img') // pick out all the images created in function createBoard and call them cards
   const optionOneId = cardsChosenId[0] // pulling first value in array and assign it to const optionOneId
   const optionTwoId = cardsChosenId[1] // pulling second value in array and assign it to const optionTwoId
-  if (cardsChosen[0] === cardsChosen[1]) // Check that first item in array equals second item in const
+  if (cardsChosen[0] === cardsChosen[1]) { // Check that first item in array equals second item in const
     alert('You found a match!') // if answer is true, alert will pop up
   cardsWon.push(cardsChosen) // push chosen cards to this array to be stored
 } else {
