@@ -76,7 +76,7 @@ const treeDatabase = [{
 ];
 
 // Shuffle cards
-sort( () => 0.5 - Math.random() )
+treeDatabase.sort( () => 0.5 - Math.random() )
 
 // Game settings
 const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
@@ -93,7 +93,7 @@ function createBoard() {
     let card = document.createElement('img') // for each card, create an image element called 'card'
     card.setAttribute('src', 'assets/images/card-back.jpg') // for each card, set a src attribute with a hyperlink value
     card.setAttribute('data-id', i) // give each card a data ID to loop (0 to last card in array)
-    //card.addEventListener('click', flipcard) ---> event listener to invoke as yet undefined card flipcard function when card is clicked
+    card.addEventListener('click', flipCard)
     grid.appendChild(card) // all these cards are placed in HTML div called grid as grid's children
   }
 }
@@ -131,7 +131,7 @@ function flipCard() {
 let cardId = this.getAttribute('data-id') // get data-id attribute produced in createBoard function
 cardsChosen.push(treeDatabase[cardId].name) // push the cards from the treeDatabse based on their card ID; once this card is located we will get its name
 cardsChosenId.push(cardId) // push card ID into seperate array called cardsChosenID
-this.setAttribute('src', cardArray[cardID].img) // add an image to card selected to flip based on its card ID
+this.setAttribute('src', treeDatabase[cardId].img) // add an image to card selected to flip based on its card ID
 if (cards.Chosen.length === 2) { // if cards chosen is 2 cards
   setTimeout(checkforMatch, 500) // after 500 milliseconds the two cards will be checked if they are a match
 }
