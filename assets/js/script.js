@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
     var cardsChosen = [] // empty array called cardsChosen
     var cardsChosenId = [] // empty array to push card ID for cardsChosen
+    var cardsWon = []
   
     // Game board 
     function createBoard() {
@@ -94,11 +95,19 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // check for matches
     function checkForMatch() {
-        var cards = document.querySelectorAll('img') pick out all the iamages created in function createBoard and call them cards
+        var cards = document.querySelectorAll('img') // pick out all the images created in function createBoard and call them cards
         const optionOneId = cardsChosenId[0] // pulling first value in array and assign it to const optionOneId
         const optionTwoId = cardsChosenId[1] // pulling second value in array and assign it to const optionTwoId
         if (cardsChosen[0] === cardsChosen[1]) // Check that furst item in array equals second item in const
         alert('You found a match!') // if answer is true, alert will pop up
+        cardsWon.push(cardsChosen) // push chosen cards to this array to be stored
+    }   else {
+        cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg') // if cards don't match, flip card back over to be played again
+        cards(optionTwoId).setAttribute('src', 'assets/images/card-back.jpg') // if cards don't match, flip card back over to be played again
+        alert('Sorry, try again!') // after cards are flipped back over, alert to say try again
+    }
+    cardsChosen = [] // so we're ready to start flipping again
+    cardsChosenId = [] // so we're ready to start flipping again
     }
 
 
