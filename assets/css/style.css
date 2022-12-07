@@ -23,8 +23,22 @@ h1 {
   position: absolute;
 }
 
-p {
+h2 {
   font-size: 1.2rem;
+  font-weight: 700;
+  color: #c4961a;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #c4961a;
+  text-align: left;
+}
+
+p {
+  font-size: 1rem;
   font-weight: 700;
   color: #c4961a;
   text-align: left;
@@ -56,13 +70,9 @@ p {
 /* Styling for header in game controls board */
 #controls h3 {
   display: inline-block;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 50px;
-  color: #c4961a;
+  line-height: 60px;
   width: 200px;
   height: 81px;
-  text-align: left;
 }
 
 /* Styling for buttons on game controls board */
@@ -112,18 +122,24 @@ img {
   cursor: pointer;
 }
 
+#tree-info {
+  left: calc(50% - 160px);
+  position: absolute;
+  margin: 960px 0 100px 0;
+  width: 320px;
+}
+
 /* Styling for div which will display tree info at bottom of console */
 #info {
   font-size: 1.2rem;
   font-weight: 700;
   color: #c4961a;
   text-align: left;
-  left: calc(50% - 175px);
+  left: calc(50% - 160px);
   position: absolute;
   margin: 1000px 0 100px 0;
-  width: 350px;
+  width: 320px;
   height: 200px;
-  background: aqua;
 }
 
 @media only screen and (min-width: 1000px) {
