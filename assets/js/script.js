@@ -86,7 +86,7 @@ const grid = document.querySelector('.grid'); // the grid element in the index f
 const resultDisplay = document.querySelector('#result'); // pick out span element with id 'result' from HTML
 
 // Variables to keep track of game state
-let cardsChosen = [] // empty array called cardsChosen
+let cardsChosen = [] // array to hold the names of the tree on chosen cards
 let cardsChosenId = [] // empty array to push card ID for cardsChosen
 let cardsWon = []
 
