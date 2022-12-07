@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* Basic page styling */
 body {
   margin: 50px;
   min-height: 100vh;
@@ -68,7 +69,7 @@ p {
   justify-content: space-between;
 }
 
-/* Styling for header in game controls board */
+/* Styling for scoreboard in game controls board */
 #controls h3 {
   display: inline-block;
   line-height: 60px;
@@ -95,7 +96,7 @@ p {
   color: white;
 }
 
-/* Styling for game board where cards will lay in a grid format */
+/* Styling for game board (where cards will lay in a grid format) */
 #grid {
   position: absolute;
   display: flex;
@@ -111,7 +112,7 @@ p {
   grid-row-gap: 8px;
 }
 
-/* Styling for cards that lay in a grid format */
+/* Styling for cards to lay in a grid format */
 img {
   position: relative;
   width: 100px;
@@ -123,7 +124,8 @@ img {
   cursor: pointer;
 }
 
-#tree-info {
+/* Styling for tree information title at the bottom of the game console */
+#info-title {
   left: calc(50% - 160px);
   position: absolute;
   margin: 960px 0 100px 0;
@@ -143,6 +145,7 @@ img {
   height: 200px;
 }
 
+/* Responsive styling for wider screens */
 @media only screen and (min-width: 1000px) {
   #grid {
     width: 500px;
@@ -161,7 +164,7 @@ img {
     margin: 80px 0 100px 0;
   }
 
-  #tree-info {
+  #info-title {
     left: calc(50% - 250px);
     margin: 800px 0 100px 45px;
     width: 500px;
