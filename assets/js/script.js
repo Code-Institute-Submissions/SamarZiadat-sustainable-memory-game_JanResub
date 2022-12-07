@@ -161,4 +161,10 @@ if (cardsChosen.length === 2) {
 }
 }
 
+// Restart game 
+// reload code from W3 Schools: https://www.w3schools.com/jsref/met_loc_reload.asp
+document.getElementById('restart-game').addEventListener('click', function(){
+  location.reload();
+});
+
 window.onload = setupGame();
