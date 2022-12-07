@@ -11,13 +11,13 @@ body {
   margin: 50px;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background: #021808;
+  background: #4e2400;
 }
 
 h1 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #c4961a;
+  color: #f97800;
   text-align: center;
   width: 400px;
   left: calc(50% - 200px);
@@ -27,21 +27,21 @@ h1 {
 h2 {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #c4961a;
+  color: #d69c00;
   text-align: left;
 }
 
 h3 {
   font-size: 1.05rem;
   font-weight: 600;
-  color: #c4961a;
+  color: #d69c00;
   text-align: left;
 }
 
 p {
   font-size: 1rem;
   font-weight: 600;
-  color: #c4961a;
+  color: #d69c00;
   text-align: left;
 }
 
@@ -58,7 +58,7 @@ p {
   margin: 20px auto;
   width: 350px;
   height: 980px;
-  background-color: #606c38;
+  background-color: #006868;
   padding: 20px 50px;
   border-radius: 15px;
   position: absolute;
@@ -80,7 +80,7 @@ p {
 /* Styling for buttons on game controls board */
 .button {
   display: inline-block;
-  background-color: #c4961a;
+  background-color: #d69c00;
   font-size: 0.8rem;
   font-weight: bold;
   color: #fefae0;
@@ -107,7 +107,7 @@ p {
   height: fit-content;
   top: 320px;
   left: calc(50% - 175px);
-  background: #606c38;
+  background: #006868;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
 }
@@ -136,7 +136,7 @@ img {
 #info {
   font-size: 1rem;
   font-weight: 600;
-  color: #c4961a;
+  color: #fefae0;
   text-align: left;
   left: calc(50% - 160px);
   position: absolute;
@@ -193,14 +193,14 @@ img {
   h3 {
     font-size: 1.05rem;
     font-weight: 600;
-    color: #c4961a;
+    color: #d69c00;
     text-align: left;
   }
   
   p {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #c4961a;
+    color: #d69c00;
     text-align: left;
   }
 }
