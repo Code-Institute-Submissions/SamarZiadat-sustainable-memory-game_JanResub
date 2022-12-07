@@ -140,7 +140,7 @@ cardsChosen = []
 cardsChosenId = [] 
 resultDisplay.textContent = cardsWon.length
 if (cardsWon.length === treeDatabase.length/2) {
-  resultDisplay.textContent = '6/6 - you won!' 
+  resultDisplay.textContent = 'You won! 6' 
 }
 }
 
