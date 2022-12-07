@@ -36,21 +36,9 @@ body {
 /* Styling for header in game controls board */
 #controls h1 {
   display: inline-block;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 60px;
-  color: #c4961a;
-  width: 75px;
-  height: 81px;
-  text-align: center;
-}
-
-/* Styling for score on game controls board */
-#score {
-  display: inline-block;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 60px;
+  line-height: 50px;
   color: #c4961a;
   width: 75px;
   height: 81px;

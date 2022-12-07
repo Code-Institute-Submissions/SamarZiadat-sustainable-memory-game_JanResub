@@ -82,7 +82,7 @@ treeDatabase.sort( () => 0.5 - Math.random() )
 
 // Game settings
 const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
-const resultDisplay = document.querySelector('#result') // pick out span element with id 'result' from HTML
+const resultDisplay = document.querySelector('#result'); // pick out span element with id 'result' from HTML
 
 // Variables to keep track of game state
 let cardsChosen = [] // empty array called cardsChosen
@@ -119,7 +119,7 @@ function setupGame() {
 // 1. Pick out all the images created in function createBoard and call them cards
 // 2. Pull first value in array and assign it to const optionOneId
 // 3. Pull second value in array and assign it to const optionTwoId
-// 4. Check that first item in array equals second item in const, if answer is true
+// 4. Check that first item in array equals second item, if answer is true
 // Matched cards will be pushed to cardsWon array to be stored
 // 5. If cards don't match, flip cards back over to be played again
 // 6. Clear cardsChosen and cardsChosenId so we're ready to start flipping again
