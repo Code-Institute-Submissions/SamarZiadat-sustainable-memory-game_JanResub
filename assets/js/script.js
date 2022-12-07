@@ -117,11 +117,11 @@ function setupGame() {
 // 1. Pick out all the images created in function createBoard and call them cards
 // 2. Pull first value in array and assign it to const optionOneId
 // 3. Pull second value in array and assign it to const optionTwoId
-// 4. Check that first item in array equals second item in const, if answer is true, alert will pop up
+// 4. Check that first item in array equals second item in const, if answer is true
 // Matched cards will be pushed to cardsWon array to be stored
-// 5. If cards don't match, flip cards back over to be played again and alert user
+// 5. If cards don't match, flip cards back over to be played again
 // 6. Clear cardsChosen and cardsChosenId so we're ready to start flipping again
-// 6. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
+// 7. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
 
 function checkForMatch() {
   let cards = document.querySelectorAll('img') 
