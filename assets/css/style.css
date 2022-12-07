@@ -37,6 +37,13 @@ p {
   width: 400px;
 }
 
+#info {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #c4961a;
+  text-align: left;
+}
+
 /* Styling for game controls board */
 #controls {
   margin: 20px auto;

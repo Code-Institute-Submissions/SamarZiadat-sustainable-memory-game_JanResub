@@ -135,7 +135,9 @@ function checkForMatch() {
   if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
     cardsWon.push(cardsChosen)
     cardsChosen = []
-    cardsChosenId = []
+    cardsChosenId = [] 
+    let myelement = document.querySelector('#info')
+    info.innerHTML = treeDatabase[optionOneId].description
   } else {
     setTimeout(() => {
         cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg')
