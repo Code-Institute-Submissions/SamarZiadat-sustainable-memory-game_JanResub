@@ -127,7 +127,7 @@ function checkForMatch() {
   let cards = document.querySelectorAll('img') 
   const optionOneId = cardsChosenId[0] 
   const optionTwoId = cardsChosenId[1] 
-  if (cardsChosen[0] === cardsChosen[1]) { 
+  if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) { 
     cardsWon.push(cardsChosen)
 } else {
   cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg') 
