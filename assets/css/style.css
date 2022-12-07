@@ -40,9 +40,9 @@ body {
   font-weight: 700;
   line-height: 50px;
   color: #c4961a;
-  width: 75px;
+  width: 200px;
   height: 81px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Styling for buttons on game controls board */
