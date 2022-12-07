@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #c4961a;
   text-align: center;
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: #c4961a;
   text-align: left;
@@ -56,7 +56,7 @@ p {
 #controls {
   margin: 20px auto;
   width: 350px;
-  height: 1000px;
+  height: 980px;
   background-color: #606c38;
   padding: 20px 50px;
   border-radius: 15px;
@@ -80,12 +80,12 @@ p {
 .button {
   display: inline-block;
   background-color: #c4961a;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #fefae0;
   margin-left: auto;
-  height: 7ch;
-  width: 17ch;
+  height: 6ch;
+  width: 14ch;
   border-radius: 99vh;
   cursor: pointer;
 }
@@ -132,8 +132,8 @@ img {
 
 /* Styling for div which will display tree info at bottom of console */
 #info {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: #c4961a;
   text-align: left;
   left: calc(50% - 160px);
@@ -151,16 +151,53 @@ img {
 
   #controls {
     width: 500px;
-    height: 615px;
+    height: 800px;
     left: calc(50% - 250px);
   }
 
-  .about-div {    
+  #about-div {    
     width: 600px;
     left: calc(50% - 300px);
+    margin: 80px 0 100px 0;
   }
 
-  header {
-    width: 600px;
+  #tree-info {
+    left: calc(50% - 250px);
+    margin: 800px 0 100px 45px;
+    width: 500px;
+  }
+
+  #info {
+    left: calc(50% - 250px);
+    margin: 830px 0 0 45px;
+    width: 400px;
+  }
+
+  .button {
+    height: 7ch;
+    width: 17ch;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #c4961a;
+    text-align: left;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #c4961a;
+    text-align: left;
   }
 }
