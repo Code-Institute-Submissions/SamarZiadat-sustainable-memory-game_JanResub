@@ -145,6 +145,14 @@ img {
   height: 200px;
 }
 
+#footer-text {
+  left: calc(50% - 175px);
+  position: absolute;
+  margin: 1200px 0 150px 20px;
+  width: 300px;
+  text-align: center;
+}
+
 /* Responsive styling for wider screens */
 @media only screen and (min-width: 1000px) {
   #grid {
@@ -202,5 +210,12 @@ img {
     font-weight: 600;
     color: #d69c00;
     text-align: left;
+  }
+
+  #footer-text {
+    left: calc(50% - 300px);
+    position: absolute;
+    margin: 1010px 0 150px 0;
+    width: 600px;
   }
 }
