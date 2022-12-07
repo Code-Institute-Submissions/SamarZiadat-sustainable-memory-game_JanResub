@@ -37,18 +37,11 @@ p {
   width: 400px;
 }
 
-#info {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #c4961a;
-  text-align: left;
-}
-
 /* Styling for game controls board */
 #controls {
   margin: 20px auto;
   width: 350px;
-  height: 760px;
+  height: 1000px;
   background-color: #606c38;
   padding: 20px 50px;
   border-radius: 15px;
@@ -107,6 +100,7 @@ p {
   grid-row-gap: 8px;
 }
 
+/* Styling for cards that lay in a grid format */
 img {
   position: relative;
   width: 100px;
@@ -115,10 +109,21 @@ img {
   border-color: #fefae0;
   border-style: solid;
   border-width: 2px;
+  cursor: pointer;
 }
 
-#grid > img {
-  cursor: pointer;
+/* Styling for div which will display tree info at bottom of console */
+#info {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #c4961a;
+  text-align: left;
+  left: calc(50% - 175px);
+  position: absolute;
+  margin: 1000px 0 100px 0;
+  width: 350px;
+  height: 200px;
+  background: aqua;
 }
 
 @media only screen and (min-width: 1000px) {
