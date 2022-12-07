@@ -82,7 +82,7 @@ const treeDatabase = [{
 treeDatabase.sort( () => 0.5 - Math.random() )
 
 // Game settings
-const grid = document.querySelector('.grid'); // the grid element in the index file is the gameboard where cards will lay
+const grid = document.querySelector('#grid'); // the grid element in the index file is the gameboard where cards will lay
 const resultDisplay = document.querySelector('#result'); // pick out span element with id 'result' from HTML
 
 // Variables to keep track of game state
