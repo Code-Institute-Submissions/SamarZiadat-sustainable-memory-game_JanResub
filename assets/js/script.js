@@ -120,46 +120,59 @@ function setupGame() {
 // 1. Pick out all the images created in function createBoard and call them cards
 // 2. Pull first value in array and assign it to const optionOneId
 // 3. Pull second value in array and assign it to const optionTwoId
-// 4. Check that first item in array equals second item, if answer is true
+// 4. Check that first card chosen equals second card chosen
+// They should be matched by tree name and not card data-id
 // Matched cards will be pushed to cardsWon array to be stored
-// 5. If cards don't match, flip cards back over to be played again
+// Clear cardsChosen and cardsChosenId so we're ready to start flipping again
+// 5. If cards don't match wait 500 milliseconds and then flip cards back over to be played again
 // 6. Clear cardsChosen and cardsChosenId so we're ready to start flipping again
 // 7. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
 
 function checkForMatch() {
-  let cards = document.querySelectorAll('img') 
-  const optionOneId = cardsChosenId[0] 
-  const optionTwoId = cardsChosenId[1] 
-  if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) { 
+  let cards = document.querySelectorAll('img')
+  const optionOneId = cardsChosenId[0]
+  const optionTwoId = cardsChosenId[1]
+  if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
     cardsWon.push(cardsChosen)
-} else {
-  cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg') 
-  cards[optionTwoId].setAttribute('src', 'assets/images/card-back.jpg') 
+    cardsChosen = []
+    cardsChosenId = []
+  } else {
+    setTimeout(() => {
+        cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg')
+        cards[optionTwoId].setAttribute('src', 'assets/images/card-back.jpg')
+        cardsChosen = []
+        cardsChosenId = []
+      },
+      500
+    )
+  }
+  resultDisplay.textContent = cardsWon.length
+  if (cardsWon.length === treeDatabase.length / 2) {
+    resultDisplay.textContent = 'You won! 6'
+  }
 }
-cardsChosen = [] 
-cardsChosenId = [] 
-resultDisplay.textContent = cardsWon.length
-if (cardsWon.length === treeDatabase.length/2) {
-  resultDisplay.textContent = 'You won! 6' 
-}
-}
+
 
 // Flip chosen card
-// 1. Get data-id attribute that was produced in the createBoard function
-// 2. Push the cards from the treeDatabase based on their card ID 
+// 1. If function is to prevent user from flipping open a third card if two are already flipped open
+// 2. Get data-id attribute that was produced in the createBoard function
+// 3. Push the cards from the treeDatabase based on their card ID 
 // Once this card is located we will get its name
-// 3. Push card ID into separate array called cardsChosenId
-// 4. Add an image to card selected, to flip it based on its card ID
-// 5. If cards chosen is now 2 cards, the two cards will be checked if they are a match (after a 500 millisecond wait)
+// 4. Push card ID into separate array called cardsChosenId
+// 5. Add an image to card selected, to flip it based on its card ID
+// 6. If cards chosen is now 2 cards, the two cards will be checked if they are a match
 
 function flipCard() {
-let cardId = this.getAttribute('data-id')
-cardsChosen.push(treeDatabase[cardId].name)
-cardsChosenId.push(cardId)
-this.setAttribute('src', treeDatabase[cardId].imgLink) 
-if (cardsChosen.length === 2) { 
-  setTimeout(checkForMatch, 500)
-}
+  if (cardsChosen.length >= 2) {
+    return
+  }
+  let cardId = this.getAttribute('data-id')
+  cardsChosen.push(treeDatabase[cardId].name)
+  cardsChosenId.push(cardId)
+  this.setAttribute('src', treeDatabase[cardId].imgLink)
+  if (cardsChosen.length === 2) {
+    checkForMatch()
+  }
 }
 
 // Restart game 
