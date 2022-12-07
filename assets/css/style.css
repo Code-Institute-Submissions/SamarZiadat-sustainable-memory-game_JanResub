@@ -63,7 +63,6 @@ p {
   width: 200px;
   height: 81px;
   text-align: left;
-  margin-right: 
 }
 
 /* Styling for buttons on game controls board */
@@ -109,6 +108,10 @@ img {
   border-color: #fefae0;
   border-style: solid;
   border-width: 2px;
+}
+
+.grid > img {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1000px) {
