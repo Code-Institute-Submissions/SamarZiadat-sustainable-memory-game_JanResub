@@ -14,10 +14,6 @@ body {
   background: #021808;
 }
 
-section {
-  left: calc(50% - 175px);
-}
-
 h1 {
   font-size: 22px;
   font-weight: 700;
@@ -29,7 +25,9 @@ p {
   font-size: 18px;
   font-weight: 700;
   color: #c4961a;
-  text-align: center;
+  text-align: left;
+  width: 600px;
+  margin: 20px 0 0 300px;
 }
 
 /* Styling for game controls board */
@@ -113,6 +111,11 @@ img {
   #controls {
     width: 500px;
     height: 615px;
+    left: calc(50% - 250px);
+  }
+
+  .about {    
+    width: 500px;
     left: calc(50% - 250px);
   }
 }
