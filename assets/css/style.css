@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #c4961a;
   text-align: center;
@@ -24,7 +24,7 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #c4961a;
   text-align: left;
@@ -54,9 +54,9 @@ p {
 }
 
 /* Styling for header in game controls board */
-#controls h1 {
+#controls h3 {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 50px;
   color: #c4961a;
@@ -69,7 +69,7 @@ p {
 .button {
   display: inline-block;
   background-color: #c4961a;
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #fefae0;
   margin-left: auto;
