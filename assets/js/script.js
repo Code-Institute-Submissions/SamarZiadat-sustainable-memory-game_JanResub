@@ -1,3 +1,5 @@
+// Tutorial used:
+// https://www.youtube.com/watch?v=tjyDOHzKN0w
 // Tree data from:
 // https://forestryandland.gov.scot/learn/trees
 // A list of trees to use in the game.
@@ -75,7 +77,7 @@ const treeDatabase = [{
 },
 ];
 
-// Shuffle cards
+// Shuffle cards (this code is from the Ania Kubów tutorial credited above)
 treeDatabase.sort( () => 0.5 - Math.random() )
 
 // Game settings
