@@ -10,7 +10,6 @@ body {
   margin: 50px;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background-repeat: no-repeat;
   background: #021808;
 }
 
@@ -19,6 +18,9 @@ h1 {
   font-weight: 700;
   color: #c4961a;
   text-align: center;
+  width: 400px;
+  left: calc(50% - 200px);
+  position: absolute;
 }
 
 p {
@@ -26,8 +28,13 @@ p {
   font-weight: 700;
   color: #c4961a;
   text-align: left;
-  width: 600px;
-  margin: 20px 0 0 300px;
+}
+
+#about-div {
+  left: calc(50% - 200px);
+  position: absolute;
+  margin: 60px 0 100px 0;
+  width: 400px;
 }
 
 /* Styling for game controls board */
@@ -40,7 +47,7 @@ p {
   border-radius: 15px;
   position: absolute;
   z-index: 0;
-  top: 200px;
+  top: 220px;
   left: calc(50% - 175px);
   display: flex;
   justify-content: space-between;
@@ -85,7 +92,7 @@ p {
   margin: 20px auto;
   width: 350px;
   height: fit-content;
-  top: 300px;
+  top: 320px;
   left: calc(50% - 175px);
   background: #606c38;
   grid-column-gap: 8px;
@@ -114,8 +121,12 @@ img {
     left: calc(50% - 250px);
   }
 
-  .about {    
-    width: 500px;
-    left: calc(50% - 250px);
+  .about-div {    
+    width: 600px;
+    left: calc(50% - 300px);
+  }
+
+  header {
+    width: 600px;
   }
 }
