@@ -1,6 +1,6 @@
 # Scotland's Tree Species: An Educational Memory Game
 
-[View the live project here] (https://samarziadat.github.io/sustainable-memory-game/)
+(View the live project here)[https://samarziadat.github.io/sustainable-memory-game/]
 
 Scotland's Tree Species is a website that aims to educate and inform its visitors on the tree species that you can find in Scotland. The website will be targeted towards those with an interest in the natural environment, Scotland, and memory games. The website will function as a host to the memory game as well as further information on these tree species. The game itself will serve as a memory card game that teaches participants to recognise the tree species through repeated attempts to match images of the trees through memory. When a user makes a successful match, information about the tree such as its name and a description appear; this allows optional further learning for the user.  In addition, the website will be designed with climate change in mind by drawing from sustainable web design strategy. 
 
@@ -79,6 +79,63 @@ No video, audio or animated images were used, as this usually constitutes the la
 
 ### Responsive design
 This website was designed to be responsive across an array of screen sizes, browsers, and devices. When the content and the platform it is displayed on are incongruous, users become frustrated, so this is a user experience consideration. Web design that is not responsive will also cause users to waste time and energy trying to accomplish tasks - including over-consuming power over simple tasks, so it's an environmental consideration too.
+
+## Features
+
+### Existing Features
+
+-   **F01 Website Introduction**
+    
+    -  This feature includes a header with the website title, as well as an about section that includes the objective of the game and the game instructions.
+     
+    - This feature is responsive, supporting legibility on all screens. On small screens it shrinks in width and increases in height.
+    -   The colours used draw from the colour scheme of the website for consistency. 
+    - Three different font sizes are used to demarcate the difference in content.
+
+![Feature 1](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-1.png?raw=true)
+    
+-   **F02 Game console**
+    -   The game console is teal coloured, which is the most eye-catching colour in the website colour scheme. To further grab the users attention it is the only teal feature on the website. The corners of the console are also rounded to give it a playful design.
+    
+    -  The game console holds other features: the game controls, the game board, and the information panel at the bottom.
+    -   The game console is responsive, and so changes in size on different screen sizes (e.g. on mobile devices it becomes narrower and longer).
+    
+![Feature 2](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-2.png?raw=true)
+ 
+-   **F03 Game controls**
+    -   The game controls sit within the game console include a scoreboard and a replay button.
+    
+    - The scoreboard counts up the amount of matches the user has made as they are making them. Once they have finished the game, the scoreboard tells the user that they have won.
+    - The replay button, once clicked, restarts the game so the user can play again or restart from the beginning. The button has rounded corners to match the console. When hovered over, the replay button has a box shadow effect - indicating to the user that it can be clicked. To reinforce that it can be clicked, the cursor becomes a pointer when hovering over the button.
+    - The colours of the game controls draw from the colour scheme of the website for consistency. 
+    -  The game controls are responsive, and so change in size on different screen sizes (e.g. on mobile devices they become smaller).  
+   
+   ![Feature 3 at beginning of gameplay](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-3-start.png?raw=true)
+    ![Feature 3 during gameplay](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-3-play.png?raw=true)
+    ![Feature 3 endgame](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-3-endgame.png?raw=true)
+    
+-   **F04 Game board**   
+    -   The game board is directly under the game controls on the game console.
+    
+    -   It includes a grid of 12 playing cards (6 cards that each have a duplicate to match). When the game starts, the playing cards are facing with the back of the card facing up towards the user. When the cards are clicked, they flip over to display the tree illustration on the other side. Only two cards can be flipped over to be compared at once. If they are a match, they stay flipped over, if they are not a match they both flip back to their original state. This can be repeated until all cards are matched.
+    -   The game board is also teal like the console, to attract and keep the attention of the user. 
+    - To make the playing cards recognisable as playing cards to the user, the edges are rounded, they have a cream border and each one has an identical 'care back'. To encourage the user to engage with the cards, the cards also feature a box-shadow to suggest that they are 3D, and when hovered over the cursor becomes a pointer. The back of the cards (which face up when the game starts) include an illustration of brown tree bark. The same illustrator also designed the drawings of the trees which are on the other side of the cards. 
+    -   This section is responsive. The game board itself is narrower and longer on mobile. With the use of flexbox, the cards also display differently on different screen sizes; on wider screens the cards display in 4 columns and on mobile they display is a narrower 3 columns.  
+    
+![Feature 4 during play](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-4.png?raw=true)
+   
+-   **F05 Information panel**
+    
+    -   On the bottom of the game console is an information panel. Before the game starts, this panel only displays text that says "The tree you just matched:". Once the first successful match is made, information about the tree matched appears. For every new match made, the previous information is wiped and new information about the latest tree matched appears. This information panel is designed to further teach the user about the trees they are beginning to recognise through matching/memorisation.
+    
+    -   The text about the trees is cream coloured to increase legibility and accessibility against the dark console background.
+
+![Feature 5 at endgame](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-5.png?raw=true)
+    
+-   **F06 Footer**
+    -   The footer is simple and paired back, featuring only one line of text. It lets the user know that environmental considerations were taken when creating this website, which will increase the confidence of the users in the website. It will also highlight to the users that a holistic approach has been taken to the development of the resulting website. 
+ 
+ ![Feature 5](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-6.png?raw=true)
 
 ## Deployment
 
