@@ -89,7 +89,7 @@ This website was designed to be responsive across an array of screen sizes, brow
     -  This feature includes a header with the website title, as well as an about section that includes the objective of the game and the game instructions.
      
     - This feature is responsive, supporting legibility on all screens. On small screens it shrinks in width and increases in height.
-    -   The colours used draw from the colour scheme of the website for consistency. 
+    - The colours used draw from the colour scheme of the website for consistency. The title colour is an eye-catching orange which is used no where else on the website in order to grab the users attention.
     - Three different font sizes are used to demarcate the difference in content.
 
 ![Feature 1](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-1.png?raw=true)
@@ -139,8 +139,8 @@ This website was designed to be responsive across an array of screen sizes, brow
 
 ### Features which could be implemented in the future
 
--   **More playing cards**
-    More playing cards be added to the stack so that there are more trees to learn from. 
+- More playing cards can be added to the stack so that there are more trees to learn from. 
+- Social media links, a logo and contact details could be added to the website if marketing was produced around the game
 
 ## Deployment
 
