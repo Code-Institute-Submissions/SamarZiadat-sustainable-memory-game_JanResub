@@ -139,8 +139,74 @@ This website was designed to be responsive across an array of screen sizes, brow
 
 ### Features which could be implemented in the future
 
-- More playing cards can be added to the stack so that there are more trees to learn from. 
-- Social media links, a logo and contact details could be added to the website if marketing was produced around the game
+-  More playing cards can be added to the stack so that there are more trees to learn from. 
+- Social media links, a logo and contact details could be added to the website if marketing materials and channels were produced.
+- A badge to prove the website's sustainability could also be added (e.g. [The website qualifies for this badge](https://www.websitecarbon.com/badge/))
+- A green web host could be considered from [The Green Hosting Directory](https://www.thegreenwebfoundation.org/directory/) to. improve the positive environmental impact of the website.
+
+## Technologies Used
+
+### Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+### [](https://github.com/SamarZiadat/charlotte-the-decorator#frameworks-libraries--programs-used)Frameworks, Libraries & Programs Used
+
+1.  [Hover.css](https://ianlunn.github.io/Hover/): used on the navigation links in the header and Social Media link in the footer to add the underline while being hovered over.
+
+2. [Git](https://git-scm.com/): used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+3.  [GitHub](https://github.com/):  used to store the projects code after being pushed from Git.
+4.  [Balsamiq](https://balsamiq.com/):used to create the wireframes during the design process.
+ 5.  [Tech Sini](https://techsini.com/multi-mockup/):  used to generate the mockup of the final website on several apple devices.
+
+## Testing
+
+### Validator Testing
+
+The W3C Markup Validator and CSS Validator Services, and JSHint,  were used to validate the project to ensure there were no syntax errors in the project.
+
+-   [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)  
+
+Results: ![CSS validation](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/css-validation.png?raw=true)
+-   [W3C Markup Validation Service](https://validator.w3.org/)  
+
+Results:
+![HTML validation](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/html-validation.png?raw=true)
+-  [JSHint](https://jshint.com/)
+
+Results: ![JS validation ](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/js-validation.png?raw=true)
+Please note that when running this test I set an option ([as suggested here](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) so the test wouldn't give a false alert for ECMAScript 6 specific syntax.
+
+### Lighthouse Test
+
+[Google's web.dev page quality test](https://web.dev/measure/)  was used to measure the website against performance, accessibility, SEO and best practice.
+
+Results:
+![Lighthouse test](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/lighthouse-test.png?raw=true)
+
+### Sustainability Testing
+
+ - The [Website Carbon Calculator](https://www.websitecarbon.com/) was
+   used to estimate the website's carbon footprint.
+
+Result:
+   
+   ![Carbon calculator result](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/carbon-result.png?raw=true)
+   
+ - Mightybytes [Ecogarder](https://www.websitecarbon.com/) was
+   used to measure how green the website is:
+   
+   **Overall result:**
+This result is relatively low, because 25% of the score is dedicated to how green your web host is, to which the website scored 0%. This holistic approach is fair, and [The Green Hosting Directory](https://www.thegreenwebfoundation.org/directory/) is suggested as a resource to explore this.
+
+![Ecograder result](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-1.png?raw=true)
+Breakdown of results:
+![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-2.png?raw=true)
+![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-3.png?raw=true)
+![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-4.png?raw=true)
 
 ## Deployment
 
