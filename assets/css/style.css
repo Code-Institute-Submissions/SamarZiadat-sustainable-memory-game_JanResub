@@ -63,7 +63,7 @@ p {
   border-radius: 15px;
   position: absolute;
   z-index: 0;
-  top: 220px;
+  top: 260px;
   left: calc(50% - 175px);
   display: flex;
   justify-content: space-between;
@@ -165,6 +165,7 @@ img {
     width: 500px;
     height: 800px;
     left: calc(50% - 250px);
+    top: 220px;
   }
 
   #about-div {
