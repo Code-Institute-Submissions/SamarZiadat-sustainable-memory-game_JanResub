@@ -1,6 +1,9 @@
-// Tree data from:
-// https://forestryandland.gov.scot/learn/trees
-// A list of trees to use in the game.
+/* 
+Tree data from:
+https://forestryandland.gov.scot/learn/trees
+A list of trees to use in the game.
+*/ 
+
 const treeDatabase = [{
   name: 'Ash',
   description: 'Ash trees are tall, domed trees can reach up to 40 metres in height. The leaves are arranged in pairs whilst the single-winged seeds grow in bunches. The bark starts smooth and greenish-grey before turning grey and fissured with age.',
@@ -63,8 +66,7 @@ const treeDatabase = [{
 },
 ];
 
-// Tutorial (by Ania Kubów) used:
-// https://www.youtube.com/watch?v=tjyDOHzKN0w
+// Tutorial (by Ania Kubów) used: https://www.youtube.com/watch?v=tjyDOHzKN0w
 
 // Shuffle cards (this code is from the Ania Kubów tutorial credited above)
 treeDatabase.sort(() => 0.5 - Math.random())
@@ -78,13 +80,15 @@ let cardsChosen = [] // array to hold the names of the tree on chosen cards
 let cardsChosenId = [] // empty array to push card ID for cardsChosen
 let cardsWon = []
 
-// Game board 
-// 1. Loop over treeDatabase
-// 2. For each card, create an image element called 'card'
-// 3. For each card, set a src attribute with value linking to card-back image
-// 4. Give each card a data ID to loop (0 to last card in array)
-// 5. When cards are clicked, they flip over 
-// 6. All these cards are placed in HTML div called grid as grid's children
+/* 
+Game board 
+1. Loop over treeDatabase
+2. For each card, create an image element called 'card'
+3. For each card, set a src attribute with value linking to card-back image
+4. Give each card a data ID to loop (0 to last card in array)
+5. When cards are clicked, they flip over 
+6. All these cards are placed in HTML div called grid as grid's children
+*/
 
 function createBoard() {
 for (let i = 0; i < treeDatabase.length; i++) {
@@ -104,17 +108,18 @@ cardsChosenId = [];
 cardsWon = [];
 }
 
-// Check for match
-// 1. Pick out all the images created in function createBoard and call them cards
-// 2. Pull first value in array and assign it to const optionOneId
-// 3. Pull second value in array and assign it to const optionTwoId
-// 4. Check that first card chosen equals second card chosen
-// They should be matched by tree name and not card data-id
-// Matched cards will be pushed to cardsWon array to be stored
-// Clear cardsChosen and cardsChosenId so we're ready to start flipping again
-// 5. If cards don't match wait 500 milliseconds and then flip cards back over to be played again
-// 6. Clear cardsChosen and cardsChosenId so we're ready to start flipping again
-// 7. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
+/* Check for match
+1. Pick out all the images created in function createBoard and call them cards
+2. Pull first value in array and assign it to const optionOneId
+3. Pull second value in array and assign it to const optionTwoId
+4. Check that first card chosen equals second card chosen
+They should be matched by tree name and not card data-id
+Matched cards will be pushed to cardsWon array to be stored
+Clear cardsChosen and cardsChosenId so we're ready to start flipping again
+5. If cards don't match wait 500 milliseconds and then flip cards back over to be played again
+6. Clear cardsChosen and cardsChosenId so we're ready to start flipping again
+7. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
+*/
 
 function checkForMatch() {
 let cards = document.querySelectorAll('img')
@@ -142,14 +147,15 @@ if (cardsWon.length === treeDatabase.length / 2) {
 }
 }
 
-// Flip chosen card
-// 1. If function is to prevent user from flipping open a third card if two are already flipped open
-// 2. Get data-id attribute that was produced in the createBoard function
-// 3. Push the cards from the treeDatabase based on their card ID 
-// Once this card is located we will get its name
-// 4. Push card ID into separate array called cardsChosenId
-// 5. Add an image to card selected, to flip it based on its card ID
-// 6. If cards chosen is now 2 cards, the two cards will be checked if they are a match
+/* Flip chosen card
+1. If function is to prevent user from flipping open a third card if two are already flipped open
+2. Get data-id attribute that was produced in the createBoard function
+3. Push the cards from the treeDatabase based on their card ID 
+Once this card is located we will get its name
+4. Push card ID into separate array called cardsChosenId
+5. Add an image to card selected, to flip it based on its card ID
+6. If cards chosen is now 2 cards, the two cards will be checked if they are a match
+*/
 
 function flipCard() {
 if (cardsChosen.length >= 2) {
