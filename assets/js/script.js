@@ -67,7 +67,7 @@ const treeDatabase = [{
 // https://www.youtube.com/watch?v=tjyDOHzKN0w
 
 // Shuffle cards (this code is from the Ania Kubów tutorial credited above)
-treeDatabase.sort( () => 0.5 - Math.random() )
+treeDatabase.sort(() => 0.5 - Math.random())
 
 // Game settings
 const grid = document.querySelector('#grid'); // the grid element in the index file is the gameboard where cards will lay
@@ -87,21 +87,21 @@ let cardsWon = []
 // 6. All these cards are placed in HTML div called grid as grid's children
 
 function createBoard() {
-  for (let i = 0; i < treeDatabase.length; i++) { 
-    let card = document.createElement('img') 
-    card.setAttribute('src', 'assets/images/card-back.jpg') 
-    card.setAttribute('data-id', i) 
-    card.addEventListener('click', flipCard)
-    grid.appendChild(card) 
-  }
+for (let i = 0; i < treeDatabase.length; i++) {
+  let card = document.createElement('img')
+  card.setAttribute('src', 'assets/images/card-back.jpg')
+  card.setAttribute('data-id', i)
+  card.addEventListener('click', flipCard)
+  grid.appendChild(card)
+}
 }
 
 // Set up the game to start playing
 function setupGame() {
-  createBoard();
-  cardsChosen = [];
-  cardsChosenId = []; 
-  cardsWon = [];
+createBoard();
+cardsChosen = [];
+cardsChosenId = [];
+cardsWon = [];
 }
 
 // Check for match
@@ -117,31 +117,30 @@ function setupGame() {
 // 7. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
 
 function checkForMatch() {
-  let cards = document.querySelectorAll('img')
-  const optionOneId = cardsChosenId[0]
-  const optionTwoId = cardsChosenId[1]
-  if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
-    cardsWon.push(cardsChosen)
-    cardsChosen = []
-    cardsChosenId = [] 
-    let myelement = document.querySelector('#info')
-    info.innerHTML = treeDatabase[optionOneId].description
-  } else {
-    setTimeout(() => {
-        cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg')
-        cards[optionTwoId].setAttribute('src', 'assets/images/card-back.jpg')
-        cardsChosen = []
-        cardsChosenId = []
-      },
-      500
-    )
-  }
-  resultDisplay.textContent = cardsWon.length
-  if (cardsWon.length === treeDatabase.length / 2) {
-    resultDisplay.textContent = 'You won! 6'
-  }
+let cards = document.querySelectorAll('img')
+const optionOneId = cardsChosenId[0]
+const optionTwoId = cardsChosenId[1]
+if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
+  cardsWon.push(cardsChosen)
+  cardsChosen = []
+  cardsChosenId = []
+  let myelement = document.querySelector('#info')
+  info.innerHTML = treeDatabase[optionOneId].description
+} else {
+  setTimeout(() => {
+      cards[optionOneId].setAttribute('src', 'assets/images/card-back.jpg')
+      cards[optionTwoId].setAttribute('src', 'assets/images/card-back.jpg')
+      cardsChosen = []
+      cardsChosenId = []
+    },
+    500
+  )
 }
-
+resultDisplay.textContent = cardsWon.length
+if (cardsWon.length === treeDatabase.length / 2) {
+  resultDisplay.textContent = 'You won! 6'
+}
+}
 
 // Flip chosen card
 // 1. If function is to prevent user from flipping open a third card if two are already flipped open
@@ -153,22 +152,22 @@ function checkForMatch() {
 // 6. If cards chosen is now 2 cards, the two cards will be checked if they are a match
 
 function flipCard() {
-  if (cardsChosen.length >= 2) {
-    return
-  }
-  let cardId = this.getAttribute('data-id')
-  cardsChosen.push(treeDatabase[cardId].name)
-  cardsChosenId.push(cardId)
-  this.setAttribute('src', treeDatabase[cardId].imgLink)
-  if (cardsChosen.length === 2) {
-    checkForMatch()
-  }
+if (cardsChosen.length >= 2) {
+  return
+}
+let cardId = this.getAttribute('data-id')
+cardsChosen.push(treeDatabase[cardId].name)
+cardsChosenId.push(cardId)
+this.setAttribute('src', treeDatabase[cardId].imgLink)
+if (cardsChosen.length === 2) {
+  checkForMatch()
+}
 }
 
 // Restart game 
 // reload code from W3 Schools: https://www.w3schools.com/jsref/met_loc_reload.asp
-document.getElementById('restart-game').addEventListener('click', function(){
-  location.reload();
+document.getElementById('restart-game').addEventListener('click', function() {
+location.reload();
 });
 
 window.onload = setupGame();

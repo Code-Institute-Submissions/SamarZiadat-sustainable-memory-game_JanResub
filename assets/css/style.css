@@ -93,7 +93,7 @@ p {
 
 /* Styling for buttons on game controls board - once hovered over */
 .button:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Styling for game board (where cards will lay in a grid format) */
@@ -116,7 +116,7 @@ p {
 img {
   position: relative;
   width: 100px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   border-color: #fefae0;
   border-style: solid;
@@ -166,7 +166,7 @@ img {
     left: calc(50% - 250px);
   }
 
-  #about-div {    
+  #about-div {
     width: 600px;
     left: calc(50% - 300px);
     margin: 80px 0 100px 0;
@@ -193,18 +193,18 @@ img {
   h1 {
     font-size: 1.5rem;
   }
-  
+
   h2 {
     font-size: 1.2rem;
   }
-  
+
   h3 {
     font-size: 1.05rem;
     font-weight: 600;
     color: #d69c00;
     text-align: left;
   }
-  
+
   p {
     font-size: 0.9rem;
     font-weight: 600;
