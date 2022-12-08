@@ -1,6 +1,6 @@
 # Scotland's Tree Species: An Educational Memory Game
 
-(View the live project here)[https://samarziadat.github.io/sustainable-memory-game/]
+View the live project [here](https://samarziadat.github.io/sustainable-memory-game/).
 
 Scotland's Tree Species is a website that aims to educate and inform its visitors on the tree species that you can find in Scotland. The website will be targeted towards those with an interest in the natural environment, Scotland, and memory games. The website will function as a host to the memory game as well as further information on these tree species. The game itself will serve as a memory card game that teaches participants to recognise the tree species through repeated attempts to match images of the trees through memory. When a user makes a successful match, information about the tree such as its name and a description appear; this allows optional further learning for the user.  In addition, the website will be designed with climate change in mind by drawing from sustainable web design strategy. 
 
@@ -136,6 +136,11 @@ This website was designed to be responsive across an array of screen sizes, brow
     -   The footer is simple and paired back, featuring only one line of text. It lets the user know that environmental considerations were taken when creating this website, which will increase the confidence of the users in the website. It will also highlight to the users that a holistic approach has been taken to the development of the resulting website. 
  
  ![Feature 5](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-6.png?raw=true)
+
+### Features which could be implemented in the future
+
+-   **More playing cards**
+    More playing cards be added to the stack so that there are more trees to learn from. 
 
 ## Deployment
 
