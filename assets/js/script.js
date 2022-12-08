@@ -95,6 +95,7 @@ for (let i = 0; i < treeDatabase.length; i++) {
   let card = document.createElement('img')
   card.setAttribute('src', 'assets/images/card-back.jpg')
   card.setAttribute('data-id', i)
+  card.setAttribute('alt', 'playing card')
   card.addEventListener('click', flipCard)
   grid.appendChild(card)
 }
