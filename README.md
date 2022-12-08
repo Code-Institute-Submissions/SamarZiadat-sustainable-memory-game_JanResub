@@ -80,6 +80,9 @@ No video, audio or animated images were used, as this usually constitutes the la
 ### Responsive design
 This website was designed to be responsive across an array of screen sizes, browsers, and devices. When the content and the platform it is displayed on are incongruous, users become frustrated, so this is a user experience consideration. Web design that is not responsive will also cause users to waste time and energy trying to accomplish tasks - including over-consuming power over simple tasks, so it's an environmental consideration too.
 
+### Wireframes
+![wireframes](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/wireframes.png?raw=true)
+
 ## Features
 
 ### Existing Features
