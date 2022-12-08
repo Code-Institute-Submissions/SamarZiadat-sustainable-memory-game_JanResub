@@ -267,3 +267,34 @@ Making a Local Clone
     
 
 [Click Here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)  for more info on cloning.
+
+## Credits
+
+### Content
+
+- All content was written by the developer.
+
+- Information about Scottish trees are borrowed from the Scottish Government's Forestry and Land website: https://forestryandland.gov.scot/learn/trees
+
+### Code
+
+-   A tutorial by Ania Kubów inspired my code: https://www.youtube.com/watch?v=tjyDOHzKN0w
+
+-   Code on how to refresh a website with JS was based on this W3Schools tutorial: https://www.w3schools.com/jsref/met_loc_reload.asp
+    
+-   Code on how to use Element.innerHTML with JS was based on this Mozilla guide: https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
+
+- This online formatter was used to beautify my code: https://beautifier.io/
+    
+### Media
+
+-   This tree Favicon was used for the website: https://favicon.io/emoji-favicons/deciduous-tree
+    
+- Illustrations of Scottish trees are borrowed from the Scottish Government's Forestry and Land website: https://forestryandland.gov.scot/learn/trees
+     
+
+### Acknowledgments
+
+Thank you to my mentor Brian Macharia who gave me very excellent advice and feedback on how to plan and execute this project and who provided me with lots of pointers and resources to help with design, coding and testing.
+
+
