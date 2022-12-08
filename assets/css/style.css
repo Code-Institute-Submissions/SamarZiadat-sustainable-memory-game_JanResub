@@ -145,6 +145,7 @@ img {
   height: 200px;
 }
 
+/* Styling for footer */
 #footer-text {
   left: calc(50% - 175px);
   position: absolute;
