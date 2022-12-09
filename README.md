@@ -153,15 +153,15 @@ This website was designed to be responsive across an array of screen sizes, brow
 -   [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-### [](https://github.com/SamarZiadat/charlotte-the-decorator#frameworks-libraries--programs-used)Frameworks, Libraries & Programs Used
+### Frameworks, Libraries & Programs Used
 
-1.  [Hover.css](https://ianlunn.github.io/Hover/): used on the navigation links in the header and Social Media link in the footer to add the underline while being hovered over.
-
-2. [Git](https://git-scm.com/): used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-
-3.  [GitHub](https://github.com/):  used to store the projects code after being pushed from Git.
-4.  [Balsamiq](https://balsamiq.com/):used to create the wireframes during the design process.
- 5.  [Tech Sini](https://techsini.com/multi-mockup/):  used to generate the mockup of the final website on several apple devices.
+1. [Git](https://git-scm.com/): used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+2.  [GitHub](https://github.com/):  used to store the projects code after being pushed from Git.
+3. [The Sustainable Web Manifesto](https://www.sustainablewebmanifesto.com/): principles were applied to all development stages.
+4. [Sustainable Web Design](https://sustainablewebdesign.org/): strategies were applied to design process.
+4.  [Hover.css](https://ianlunn.github.io/Hover/): used on the navigation links in the header and Social Media link in the footer to add the underline while being hovered over.
+5.  [Balsamiq](https://balsamiq.com/): used to create the wireframes during the design process.
+6.  [Tech Sini](https://techsini.com/multi-mockup/):  used to generate the mockup of the final website on several apple devices.
 
 ## Testing
 
@@ -337,6 +337,8 @@ Making a Local Clone
 
 - Information about Scottish trees are borrowed from the Scottish Government's Forestry and Land website: https://forestryandland.gov.scot/learn/trees
 
+- This article by Wholegrain Digital helped inform my design considerations with regards to colour, and helped inform this README doc in particular: https://www.wholegraindigital.com/blog/dark-colour-web-design/
+
 ### Code
 
 -   A tutorial by Ania Kubów inspired my code: https://www.youtube.com/watch?v=tjyDOHzKN0w
@@ -356,6 +358,6 @@ Making a Local Clone
 
 ### Acknowledgments
 
-Thank you to my mentor Brian Macharia who gave me very excellent advice and feedback on how to plan and execute this project and who provided me with lots of pointers and resources to help with design, coding and testing.
+Thank you to my mentor Brian Macharia who gave me excellent advice and feedback on how to plan and execute this project and who provided me with lots of pointers and resources to help with design, coding and testing. Thank you to the tutors at the Code Institute who advised me during the building and debugging process.
 
 
