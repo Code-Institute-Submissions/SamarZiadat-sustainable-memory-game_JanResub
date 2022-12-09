@@ -18,30 +18,28 @@ Scotland's Tree Species is a website that aims to educate and inform its visitor
 
 ## User experience (UX)
 
--   ### [](https://github.com/SamarZiadat/charlotte-the-decorator#user-stories)User Stories
-    
-    -   #### [](https://github.com/SamarZiadat/charlotte-the-decorator#first-time-visitor-goals)First Time Visitor Goals
-        
-        a. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-        
-        b. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        
-        c. As a First Time Visitor, I want to be able to read testimonials from past customers to determine their reputation and if they are trusted.
-        
-    -   #### [](https://github.com/SamarZiadat/charlotte-the-decorator#returning-visitor-goals)Returning Visitor Goals
-        
-        a. As a Returning Visitor, I want to be able to access and view the businesses' services quickly and easily.
-        
-        b. As a Returning Visitor, I want to be able to contact the business to request a service or ask questions.
-        
-    -   #### [](https://github.com/SamarZiadat/charlotte-the-decorator#frequent-user-goals)Frequent User Goals
-        
-        a. As a Frequent User, I want to be to view newly added examples of the businesses' portfolio of work.
-        
-        b. As a Frequent User, I want to be able to check new services the business offers.
-        
-        c. As a Frequent User, I want to be able to contact the business to request a service, ask questions, follow-up on existing communications, or leave feedback.
-        
+  **User Stories**
+
+-   **First Time Visitor Goals**
+
+a. As a First Time Visitor, I want to easily understand the main purpose of the site.
+
+b. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+
+c. As a First Time Visitor, I want to be able to access the website easily from any device.
+
+d. As a First Time Visitor, I want to be able to play the game on the website for the first time.
+
+-   **Returning Visitor Goals**
+
+a. As a Returning Visitor, I want to be able to play the game on the website multiple times in a row.
+
+b. As a Returning Visitor, I want to start recognising different Scottish tree species.
+
+-   **Frequent User Goals**
+
+a. As a Frequent User, I want to be able to learn more about the trees that I am now recognising.
+
 ## Design
 This project is designed with sustainability in mind. The internet currently produces approximately 3.8% of global carbon emissions, which are rising in line with our hunger to consume more data. Communications tech will emit more carbon by 2025 than any country except China, India, and the U.S. This is not inevitable; if it is used wisely, web technology has the potential to bring huge benefits to society and the environment. 
 
