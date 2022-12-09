@@ -21,25 +21,24 @@ Scotland's Tree Species is a website that aims to educate and inform its visitor
   **User Stories**
 
 -   **First Time Visitor Goals**
+		i. As a First Time Visitor, I want to easily understand the main purpose of the site.
 
-a. As a First Time Visitor, I want to easily understand the main purpose of the site.
+	ii. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
 
-b. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+	iii. As a First Time Visitor, I want to be able to access the website easily from any device.
 
-c. As a First Time Visitor, I want to be able to access the website easily from any device.
+	iv. As a First Time Visitor, I want to be able to play the game on the website for the first time.
 
-d. As a First Time Visitor, I want to be able to play the game on the website for the first time.
+- **Returning Visitor Goals**
 
--   **Returning Visitor Goals**
+	i. As a Returning Visitor, I want to be able to play the game on the website multiple times in a row.
 
-a. As a Returning Visitor, I want to be able to play the game on the website multiple times in a row.
-
-b. As a Returning Visitor, I want to start recognising different Scottish tree species.
+	ii. As a Returning Visitor, I want to start recognising different Scottish tree species.
 
 -   **Frequent User Goals**
 
-a. As a Frequent User, I want to be able to learn more about the trees that I am now recognising.
-
+	i. As a Frequent User, I want to be able to learn more about the trees that I am now recognising.
+    
 ## Design
 This project is designed with sustainability in mind. The internet currently produces approximately 3.8% of global carbon emissions, which are rising in line with our hunger to consume more data. Communications tech will emit more carbon by 2025 than any country except China, India, and the U.S. This is not inevitable; if it is used wisely, web technology has the potential to bring huge benefits to society and the environment. 
 
@@ -208,6 +207,58 @@ Breakdown of results:
 ![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-2.png?raw=true)
 ![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-3.png?raw=true)
 ![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-4.png?raw=true)
+
+### Testing User Stories from User Experience (UX) Section
+
+ **User Stories**
+
+ -   **First Time Visitor Goals**
+ 
+		i. As a First Time Visitor, I want to easily understand the main purpose of the site.
+		
+	 - a. Upon entering the site, users are automatically greeted with a clean and easily readable title and website introduction. Underneath there are game instructions and the game console follows.
+	 
+	 - b. When scrolling to the bottom of the website, which is purposely not very long, the user reaches the footer, which tells them that the website has been developed with the planet in mind. This tells them more about the website and aims to leave them feeling good about their experience. 
+	 
+	 ii. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+	 
+	 - a. The user can scroll down to navigate the whole website, leading down to the footer (which is the final feature).
+	 
+	 iii. As a First Time Visitor, I want to be able to access the website easily from any device.
+	 - a. The website is designed to be fully responsive on all devices and screen sizes. It is also compatible on a diversity of the most popular browsers.
+	 
+	 iv. As a First Time Visitor, I want to be able to play the game on the website for the first time.
+	 	- a. Instructions are available at the top of the website and so are easily accessible. 
+	 	
+	 	- b. The game is simple to follow and is based on a popular model of game.
+	 	
+	 	- c. On every device, the game console is physically available on the website as you land on the page, so it doesn't require any navigation to find it. 
+
+ - **Returning Visitor Goals**
+
+	i. As a Returning Visitor, I want to be able to play the game on the website multiple times in a row.
+	
+	- a. Once you start playing, the scoreboard begins to tally up your successful 'matches'. Once you win, the game is over, and the scoreboard lets you know that you have won. Therefore, it's easily understood by users once the game starts, is in ongoing play, and when the game ends.
+
+	- b. The 'replay' button is easily accessible at the top of the game console. Once clicked, it starts the game again.
+
+	ii. As a Returning Visitor, I want to start recognising different Scottish tree species.
+
+	- a. The game is designed as both an enjoyable experience but also as an educational tool that tests and improves your memory. Upon playing the game several times, users should begin to recognise the trees that they are matching together. This will lead the users to begin to recognise shapes, colours and features of each tree both in the game and outside in the world.
+	
+	- b. When two identical cards are successfully matched the scoreboard update - helping the user keep track of how many matches they've made. This is also a motivational tool to encourage them to keep playing until they have won.
+
+ -   **Frequent User Goals**
+ i. As a Frequent User, I want to be able to learn more about the trees that I am now recognising. 
+		- a. When a 'match' is made between two cards, information about the tree that has been matched appears at the bottom of the console, including the tree's name, a description of it, and additional facts. As a returning visitor, they may begin to learn some of the names of the trees they are recognising and matching, as well learning additional information about it.
+
+### Browser Compatibility
+
+-   Testing has been carried out on the following browsers :
+    -   Chrome Version 107.0.5304.87
+    -   Edge Version 107.0.1418.24
+    -   Firefox Version 94.0.1
+    -   Safari on macOS (Safari Version 15.6)
 
 ## Deployment
 
