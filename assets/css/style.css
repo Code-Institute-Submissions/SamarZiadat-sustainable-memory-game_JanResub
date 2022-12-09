@@ -105,7 +105,7 @@ p {
   margin: 20px auto;
   width: 350px;
   height: fit-content;
-  top: 320px;
+  top: 340px;
   left: calc(50% - 175px);
   background: #006868;
   grid-column-gap: 8px;
@@ -128,7 +128,7 @@ img {
 #info-title {
   left: calc(50% - 160px);
   position: absolute;
-  margin: 960px 0 100px 0;
+  margin: 980px 0 100px 0;
   width: 320px;
 }
 
@@ -140,7 +140,7 @@ img {
   text-align: left;
   left: calc(50% - 160px);
   position: absolute;
-  margin: 1000px 0 100px 0;
+  margin: 1020px 0 100px 0;
   width: 320px;
   height: 200px;
 }
@@ -149,7 +149,7 @@ img {
 #footer-text {
   left: calc(50% - 175px);
   position: absolute;
-  margin: 1200px 0 150px 20px;
+  margin: 1220px 0 150px 20px;
   width: 300px;
   text-align: center;
 }
