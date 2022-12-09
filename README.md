@@ -21,7 +21,8 @@ Scotland's Tree Species is a website that aims to educate and inform its visitor
   **User Stories**
 
 -   **First Time Visitor Goals**
-		i. As a First Time Visitor, I want to easily understand the main purpose of the site.
+	
+	i. As a First Time Visitor, I want to easily understand the main purpose of the site.
 
 	ii. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
 
@@ -35,10 +36,10 @@ Scotland's Tree Species is a website that aims to educate and inform its visitor
 
 	ii. As a Returning Visitor, I want to start recognising different Scottish tree species.
 
--   **Frequent User Goals**
+-   **Frequent Visitor Goals**
 
-	i. As a Frequent User, I want to be able to learn more about the trees that I am now recognising.
-    
+	i. As a Frequent Visitor, I want to be able to learn more about the trees that I am now recognising.
+   
 ## Design
 This project is designed with sustainability in mind. The internet currently produces approximately 3.8% of global carbon emissions, which are rising in line with our hunger to consume more data. Communications tech will emit more carbon by 2025 than any country except China, India, and the U.S. This is not inevitable; if it is used wisely, web technology has the potential to bring huge benefits to society and the environment. 
 
@@ -248,9 +249,11 @@ Breakdown of results:
 	
 	- b. When two identical cards are successfully matched the scoreboard update - helping the user keep track of how many matches they've made. This is also a motivational tool to encourage them to keep playing until they have won.
 
- -   **Frequent User Goals**
- i. As a Frequent User, I want to be able to learn more about the trees that I am now recognising. 
-		- a. When a 'match' is made between two cards, information about the tree that has been matched appears at the bottom of the console, including the tree's name, a description of it, and additional facts. As a returning visitor, they may begin to learn some of the names of the trees they are recognising and matching, as well learning additional information about it.
+ -   **Frequent Visitor Goals**
+ 
+	 i. As a Frequent Visitor, I want to be able to learn more about the trees that I am now recognising. 
+ 
+		- a. When a 'match' is made between two cards, information about the tree that has been matched appears at the bottom of the console, including the tree's name, a description of it, and additional facts. As a Frequent Visitor, they may begin to learn some of the names of the trees they are recognising and matching, as well learning additional information about it.
 
 ### Browser Compatibility
 
