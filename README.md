@@ -255,6 +255,12 @@ Breakdown of results:
  
 		- a. When a 'match' is made between two cards, information about the tree that has been matched appears at the bottom of the console, including the tree's name, a description of it, and additional facts. As a Frequent Visitor, they may begin to learn some of the names of the trees they are recognising and matching, as well learning additional information about it.
 
+### Test Cases and Results
+
+-   The below table details the test cases that were used, the results and a cross-reference to the Feature ID that each test case exercised (click image to open):
+
+![test-case-table](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/testing-table.png?raw=true)
+
 ### Browser Compatibility
 
 -   Testing has been carried out on the following browsers :
