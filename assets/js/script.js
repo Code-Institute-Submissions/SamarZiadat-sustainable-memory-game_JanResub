@@ -81,11 +81,15 @@ treeDatabase.sort(() => 0.5 - Math.random());
 // Game settings
 const grid = document.querySelector('#grid'); // the grid element in the index file is the gameboard where cards will lay
 const resultDisplay = document.querySelector('#result'); // pick out span element with id 'result' from HTML
+const time = 0;
 
 // Variables to keep track of game state
 let cardsChosen = []; // array to hold the names of the tree on chosen cards
 let cardsChosenId = []; // empty array to push card ID for cardsChosen
 let cardsWon = [];
+
+// Variables to keep track of user data
+let endTime = [];
 
 /**
  * Game board 
@@ -152,6 +156,8 @@ if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
 resultDisplay.textContent = cardsWon.length;
 if (cardsWon.length === treeDatabase.length / 2) {
   resultDisplay.textContent = 'You won! 6';
+  let endTime = document.querySelector('timer-display');
+  stopTimer();
 }
 }
 
@@ -176,6 +182,19 @@ this.setAttribute('src', treeDatabase[cardId].imgLink);
 if (cardsChosen.length === 2) {
   checkForMatch();
 }
+}
+
+var sec = 0;
+function pad (val) {return val > 9 ? val : "0" + val;}
+var timer = setInterval(function(){
+    document.getElementById("seconds").innerHTML=pad(++sec%60);
+    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+}, 1000);
+
+function stopTimer() {
+  if (cardsWon.length === treeDatabase.length / 2) { 
+  clearInterval(timer);
+  }
 }
 
 /** Restart game 
