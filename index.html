@@ -8,8 +8,6 @@
   <link rel="icon" href="assets/images/favicon.png">
   <title>Scotland's Tree Species: A Memory Game</title>
 </head>
-
-<body>
   <header>
     <h1>Scotland's Tree Species:<br>A Memory Game</h1>
   </header>
@@ -19,6 +17,10 @@
       <p><br>Instructions: <i>Click on the cards to flip them. Match identical trees to reveal information about them at the bottom of the console. Keep replaying to start identifying trees in the wild.</i></p>
     </div>
   </section>
+  <label class="switch">
+    <input type="checkbox" onclick="modeToggle()">
+    <span class="slider round"></span>
+  </label>
   <section id="game-console">
     <div id="controls">
       <h3>Matches: <span id="result">0</span>/6<span id="win"></span></h3>

@@ -1,3 +1,9 @@
+// Light-mode toggle
+function modeToggle() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}
+
 /**
  * Tree data from: https://forestryandland.gov.scot/learn/trees
  * 
