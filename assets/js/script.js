@@ -130,7 +130,8 @@ cardsWon = [];
  * Clear cardsChosen and cardsChosenId so we're ready to start flipping again
  * 5. If cards don't match wait 500 milliseconds and then flip cards back over to be played again
  * 6. Clear cardsChosen and cardsChosenId so we're ready to start flipping again
- * 7. If amount cardsWon deeply equals (the amount cards in our database/2), we know we have won - alert user
+ * 7. If amount cardsWon deeply equals (the amount cards in our database/2), 
+ * we know we have won - alert user and stop timer
 */
 
 function checkForMatch() {
@@ -156,7 +157,6 @@ if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
 resultDisplay.textContent = cardsWon.length;
 if (cardsWon.length === treeDatabase.length / 2) {
   resultDisplay.textContent = 'You won! 6';
-  let endTime = document.querySelector('timer-display');
   stopTimer();
 }
 }
@@ -184,6 +184,16 @@ if (cardsChosen.length === 2) {
 }
 }
 
+/** Timer functionality
+ * 1. Timer starts when page is loaded and ticks over every second
+ * 2. Seconds and minutes passed display in the elements with ID 
+ * seconds and minutes from the html file
+ * 3. Timer is set to stop when user wins (the length of cards.won list is half the length 
+ * of the tree database)
+ * 4. When the timer function runs, it calls tick() to increment the elapsed variable by 1.
+ * Variable increments each time the timer fires (which is every second for as long as it runs)
+ * This lets us know how many seconds it took until the user won the game
+*/
 var sec = 0;
 function pad (val) {return val > 9 ? val : "0" + val;}
 var timer = setInterval(function(){
@@ -195,6 +205,11 @@ function stopTimer() {
   if (cardsWon.length === treeDatabase.length / 2) { 
   clearInterval(timer);
   }
+}
+
+let elapsed = 0;
+function tick() {
+    elapsed ++
 }
 
 /** Restart game 
