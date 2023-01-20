@@ -92,6 +92,7 @@ let cardsWon = [];
 const userField = document.getElementById('username-field');
 const userButton = document.getElementById('username-button');
 const userParagraph = document.getElementById('username-paragraph');
+const playButton = document.getElementById('start-button');
 let endTime = [];
 
 /**
@@ -118,12 +119,22 @@ function usernameForm() {
   usernameButton.setAttribute('id', 'username-button');
   let usernameMessage = docment.createElement('p');
   usernameMessage.setAttribute('id', 'username-paragraph');
-  grid.appendChild(usernameField, usernameButton, usernameField);
-  userButton.addEventListener('click', messageUser);
+  username-div.appendChild(usernameField, usernameButton, usernameField);
+  userButton.addEventListener('click', usernameEntered);
 }
 
-function messageUser() {
+function playButton {
+  let playButton = document.createElement('button');
+  playButton.setAttribute('type', 'button');
+  playButton.setAttribute('value', 'Start Game');
+  playButton.setAttribute('id', 'start-button');
+  username-div.appendChild([playButton]);
+  userButton.addEventListener('click', setupGame);
+}
+
+function usernameEntered() {
   userParagraph.innerHTML = userField.value;
+  playButton()
 }
 
 /**
