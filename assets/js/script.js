@@ -82,6 +82,8 @@ treeDatabase.sort(() => 0.5 - Math.random());
 const grid = document.querySelector('#grid'); // the grid element in the index file is the gameboard where cards will lay
 const resultDisplay = document.querySelector('#result'); // pick out span element with id 'result' from HTML
 const time = 0;
+let timer = null;
+let elapsed = 0;
 
 // Variables to keep track of game state
 let cardsChosen = []; // array to hold the names of the tree on chosen cards
@@ -172,15 +174,10 @@ for (let i = 0; i < treeDatabase.length; i++) {
 // Set up the game to start playing
 function setupGame() {
 createBoard();
+startTimer();
 cardsChosen = [];
 cardsChosenId = [];
 cardsWon = [];
-var sec = 0;
-function pad (val) {return val > 9 ? val : "0" + val;}
-var timer = setInterval(function(){
-    document.getElementById("seconds").innerHTML=pad(++sec%60);
-    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
-}, 1000);
 }
 
 /** Check for match
@@ -248,26 +245,25 @@ if (cardsChosen.length === 2) {
 }
 
 /** Timer functionality
- * 1. Timer starts when page is loaded and ticks over every second
- * 2. Seconds and minutes passed display in the elements with ID 
- * seconds and minutes from the html file
- * 3. Timer is set to stop when user wins (the length of cards.won list is half the length 
- * of the tree database)
- * 4. When the timer function runs, it calls tick() to increment the elapsed variable by 1.
- * Variable increments each time the timer fires (which is every second for as long as it runs)
- * This lets us know how many seconds it took until the user won the game
+ * 1. startTimer function sets a named interval 'timer'
+ * 2. Every second it calls the 'tick' function, which increments the elapsed time
+ * 3. stopTimer clears the interval on timer, and so pauses the timer
+ * 4. Elapsed time is logged from when the timer starts to when it stops
 */
 
-
-function stopTimer() {
-  if (cardsWon.length === treeDatabase.length / 2) { 
-  clearInterval(timer);
-  }
+const startTimer = () => {
+  timer = setInterval(() => {
+    tick()
+  }, 1000);
 }
 
-let elapsed = 0;
+const stopTimer = () => {
+  clearInterval(timer);
+}
+
 function tick() {
-    elapsed ++
+  elapsed += 1;
+  console.log(elapsed);
 }
 
 /** Restart game 
