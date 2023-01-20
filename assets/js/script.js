@@ -89,10 +89,6 @@ let cardsChosenId = []; // empty array to push card ID for cardsChosen
 let cardsWon = [];
 
 // Variables to keep track of user data
-const userField = document.getElementById('username-field');
-const userButton = document.getElementById('username-button');
-const userParagraph = document.getElementById('username-paragraph');
-const playButton = document.getElementById('start-button');
 let endTime = [];
 
 /**
@@ -117,10 +113,12 @@ function usernameForm() {
   usernameButton.setAttribute('type', 'button');
   usernameButton.setAttribute('value', 'Submit');
   usernameButton.setAttribute('id', 'username-button');
-  let usernameMessage = docment.createElement('p');
+  let usernameMessage = document.createElement('p');
   usernameMessage.setAttribute('id', 'username-paragraph');
-  username-div.appendChild(usernameField, usernameButton, usernameField);
-  userButton.addEventListener('click', usernameEntered);
+  username.appendChild(usernameField);
+  button.appendChild(usernameButton);
+  message.appendChild(usernameMessage);
+  usernameButton.addEventListener('click', usernameEntered);
 }
 
 /**
@@ -129,13 +127,13 @@ function usernameForm() {
  * 2. The button is placed in a div called username-div as username-div's child
  * 3. When the button is clicked, the game is set up for play
 */
-function playButton {
+function displayPlayButton() {
   let playButton = document.createElement('button');
   playButton.setAttribute('type', 'button');
   playButton.setAttribute('value', 'Start Game');
   playButton.setAttribute('id', 'start-button');
-  username-div.appendChild([playButton]);
-  userButton.addEventListener('click', setupGame);
+  playButton.addEventListener('click', setupGame);
+  play.appendChild(playButton);
 }
 
 /**
@@ -144,8 +142,8 @@ function playButton {
  * and display a play button.
 */
 function usernameEntered() {
-  userParagraph.innerHTML = userField.value;
-  playButton()
+  usernameMessage.innerHTML = usernameField.value;
+  displayPlayButton()
 }
 
 /**
@@ -279,4 +277,4 @@ document.getElementById('restart-game').addEventListener('click', function() {
 location.reload();
 });
 
-window.onload = setupGame();
+window.onload = usernameForm();
