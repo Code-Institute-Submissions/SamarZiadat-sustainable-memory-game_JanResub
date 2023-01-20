@@ -123,6 +123,12 @@ function usernameForm() {
   userButton.addEventListener('click', usernameEntered);
 }
 
+/**
+ * Play Button 
+ * 1. Create a button element with a value of 'Start Game' and an id
+ * 2. The button is placed in a div called username-div as username-div's child
+ * 3. When the button is clicked, the game is set up for play
+*/
 function playButton {
   let playButton = document.createElement('button');
   playButton.setAttribute('type', 'button');
@@ -132,6 +138,11 @@ function playButton {
   userButton.addEventListener('click', setupGame);
 }
 
+/**
+ * When the user enters and submits their username via usernameForm(), the inputted text 
+ * appears in the userField paragraph, and the playFunction() is called to create
+ * and display a play button.
+*/
 function usernameEntered() {
   userParagraph.innerHTML = userField.value;
   playButton()
