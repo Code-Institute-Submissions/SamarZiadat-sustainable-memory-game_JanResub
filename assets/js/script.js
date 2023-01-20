@@ -94,6 +94,18 @@ const userButton = document.getElementById('username-button');
 const userParagraph = document.getElementById('username-paragraph');
 let endTime = [];
 
+/**
+ * Ask User for Username
+ * 1. Create an text type input element with a placeholder, a maximum input length
+ * and an id
+ * 2. Create a button element with a value of 'Submit' and an id
+ * 3. Create a paragraph element with an id
+ * 4. These three elements are placed in HTML div called grid as grid's children
+ * 5. When cards are clicked, they flip over 
+ * 6. All these cards are placed in HTML div called grid as grid's children
+ * 7. When the button is clicked, the user input is printed in the paragraph element
+*/
+
 function usernameForm() {
   let usernameField = document.createElement('input');
   usernameField.setAttribute('type', 'text');
@@ -107,14 +119,11 @@ function usernameForm() {
   let usernameMessage = docment.createElement('p');
   usernameMessage.setAttribute('id', 'username-paragraph');
   grid.appendChild(usernameField, usernameButton, usernameField);
+  userButton.addEventListener('click', messageUser);
 }
 
 function messageUser() {
-userParagraph.innerHTML = userField.value;
-}
-
-function usernameButtonEvent() {
-  userButton.addEventListener('click', messageUser)
+  userParagraph.innerHTML = userField.value;
 }
 
 /**
