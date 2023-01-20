@@ -113,11 +113,13 @@ function usernameForm() {
   usernameButton.setAttribute('type', 'button');
   usernameButton.setAttribute('value', 'Submit');
   usernameButton.setAttribute('id', 'username-button');
+  usernameButton.innerText = 'Submit';
   let usernameMessage = document.createElement('p');
   usernameMessage.setAttribute('id', 'username-paragraph');
   username.appendChild(usernameField);
-  button.appendChild(usernameButton);
-  message.appendChild(usernameMessage);
+  username.appendChild(usernameButton);
+  username.appendChild(usernameMessage);
+  usernameMessage.innerHTML = usernameField.value;
   usernameButton.addEventListener('click', usernameEntered);
 }
 
@@ -130,7 +132,8 @@ function usernameForm() {
 function displayPlayButton() {
   let playButton = document.createElement('button');
   playButton.setAttribute('type', 'button');
-  playButton.setAttribute('value', 'Start Game');
+  playButton.setAttribute('value', 'Submit');
+  playButton.innerText = 'Start Game';
   playButton.setAttribute('id', 'start-button');
   playButton.addEventListener('click', setupGame);
   play.appendChild(playButton);
@@ -142,7 +145,6 @@ function displayPlayButton() {
  * and display a play button.
 */
 function usernameEntered() {
-  usernameMessage.innerHTML = usernameField.value;
   displayPlayButton()
 }
 
@@ -173,6 +175,12 @@ createBoard();
 cardsChosen = [];
 cardsChosenId = [];
 cardsWon = [];
+var sec = 0;
+function pad (val) {return val > 9 ? val : "0" + val;}
+var timer = setInterval(function(){
+    document.getElementById("seconds").innerHTML=pad(++sec%60);
+    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+}, 1000);
 }
 
 /** Check for match
@@ -249,12 +257,7 @@ if (cardsChosen.length === 2) {
  * Variable increments each time the timer fires (which is every second for as long as it runs)
  * This lets us know how many seconds it took until the user won the game
 */
-var sec = 0;
-function pad (val) {return val > 9 ? val : "0" + val;}
-var timer = setInterval(function(){
-    document.getElementById("seconds").innerHTML=pad(++sec%60);
-    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
-}, 1000);
+
 
 function stopTimer() {
   if (cardsWon.length === treeDatabase.length / 2) { 
