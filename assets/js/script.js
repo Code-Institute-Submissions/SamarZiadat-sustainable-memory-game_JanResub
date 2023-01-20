@@ -89,7 +89,33 @@ let cardsChosenId = []; // empty array to push card ID for cardsChosen
 let cardsWon = [];
 
 // Variables to keep track of user data
+const userField = document.getElementById('username-field');
+const userButton = document.getElementById('username-button');
+const userParagraph = document.getElementById('username-paragraph');
 let endTime = [];
+
+function usernameForm() {
+  let usernameField = document.createElement('input');
+  usernameField.setAttribute('type', 'text');
+  usernameField.setAttribute('placeholder', 'Enter Username');
+  usernameField.setAttribute('maxlength', '15');
+  usernameField.setAttribute('id', 'username-field');
+  let usernameButton = document.createElement('button');
+  usernameButton.setAttribute('type', 'button');
+  usernameButton.setAttribute('value', 'Submit');
+  usernameButton.setAttribute('id', 'username-button');
+  let usernameMessage = docment.createElement('p');
+  usernameMessage.setAttribute('id', 'username-paragraph');
+  grid.appendChild(usernameField, usernameButton, usernameField);
+}
+
+function messageUser() {
+userParagraph.innerHTML = userField.value;
+}
+
+function usernameButtonEvent() {
+  userButton.addEventListener('click', messageUser)
+}
 
 /**
  * Game board 
