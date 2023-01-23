@@ -172,7 +172,7 @@ for (let i = 0; i < treeDatabase.length; i++) {
 // Set up the game to start playing
 function setupGame() {
 createBoard();
-startTimer()
+startTime()
 cardsChosen = [];
 cardsChosenId = [];
 cardsWon = [];
@@ -215,7 +215,7 @@ if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
 resultDisplay.textContent = cardsWon.length;
 if (cardsWon.length === treeDatabase.length / 2) {
   resultDisplay.textContent = 'You won! 6';
-  stopTimer();
+  stopTime();
 }
 }
 
@@ -253,17 +253,23 @@ if (cardsChosen.length === 2) {
  * This lets us know how many seconds it took until the user won the game
 */
 
-function startTimer() {
+// add timer variable in the main scope
+let timer;
+
+function startTime() {
 var sec = 0;
 function pad (val) {return val > 9 ? val : "0" + val;}
-var timer = setInterval(function(){
-    document.getElementById("seconds").innerHTML=pad(++sec%60);
-    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
-}, 1000);
+
+  // assign the timer varaible to the setInterval function
+  timer = setInterval(function(){
+      document.getElementById("seconds").innerHTML=pad(++sec%60);
+      document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+  }, 1000);
 }
 
-function stopTimer() {
+function stopTime() {
   if (cardsWon.length === treeDatabase.length / 2) { 
+  // stop the timer
   clearInterval(timer);
   }
 }
