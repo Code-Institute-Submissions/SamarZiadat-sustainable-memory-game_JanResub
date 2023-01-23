@@ -81,8 +81,8 @@ p {
   height: 81px;
 }
 
-/* Styling for buttons on game controls board */
-.button {
+/* Styling for replay button on game controls board */
+#restart-game {
   display: inline-block;
   background-color: #d69c00;
   font-size: 0.8rem;
@@ -133,21 +133,38 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px auto;
+  padding: 20px 50px;
+  top: 260px;
   width: 350px;
-  height: fit-content;
-  top: 340px;
+  height: 200px;
   left: calc(50% - 175px);
   background: #006868;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
+  border-radius: 15px;
 }
 
 #username-field {
   position: relative;
+  width: 50%;
+  height: 30px;
+  padding: 5px 10px;
+  margin: 8px 0;
+  border: 1.5px solid #d69c00;
+  border-radius: 99vh;
+  background-color: #fefae0;
+  color: #006868;
 }
 
-#username-button {
+::placeholder {
+  color: #006868;
+}
+
+#username-field:focus {
+outline: none;
+}
+
+#username-button, #start-button {
   position: relative;
   background-color: #d69c00;
   font-size: 0.8rem;
@@ -163,18 +180,8 @@ img {
   position: relative;
   font-size: 0.8rem;
   font-weight: bold;
-}
-
-#start-button{
-  position: relative;
-  background-color: #d69c00;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #fefae0;
-  height: 6ch;
-  width: 14ch;
-  border-radius: 99vh;
-  cursor: pointer;
+  color: #d69c00;
+  background-color: white;
 }
 
 /* Styling for tree information title at the bottom of the game console */

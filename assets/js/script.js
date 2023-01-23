@@ -111,9 +111,9 @@ function usernameForm() {
   usernameField.setAttribute('id', 'username-field');
   let usernameButton = document.createElement('button');
   usernameButton.setAttribute('type', 'button');
-  usernameButton.setAttribute('value', 'Submit');
+  usernameButton.setAttribute('value', 'submit');
   usernameButton.setAttribute('id', 'username-button');
-  usernameButton.innerText = 'Submit';
+  usernameButton.innerText = 'SUBMIT';
   let usernameMessage = document.createElement('p');
   usernameMessage.setAttribute('id', 'username-paragraph');
   username.appendChild(usernameField);
@@ -123,6 +123,8 @@ function usernameForm() {
   usernameButton.addEventListener('click', usernameEntered);
   let consoleControls = document.getElementById('controls');
   consoleControls.style.visibility = "hidden";
+  let aboutTreeTitle = document.getElementById('info-title');
+  aboutTreeTitle.style.visibility = "hidden";
 }
 
 /**
@@ -135,7 +137,7 @@ function displayPlayButton() {
   let playButton = document.createElement('button');
   playButton.setAttribute('type', 'button');
   playButton.setAttribute('value', 'Submit');
-  playButton.innerText = 'Start Game';
+  playButton.innerText = 'START GAME';
   playButton.setAttribute('id', 'start-button');
   playButton.addEventListener('click', setupGame);
   username.appendChild(playButton);
@@ -170,6 +172,10 @@ for (let i = 0; i < treeDatabase.length; i++) {
   grid.appendChild(card);
   let consoleControls = document.getElementById('controls');
   consoleControls.style.visibility = "visible";
+  let aboutTreeTitle = document.getElementById('info-title');
+  aboutTreeTitle.style.visibility = "visible";
+  let usernameDiv = document.getElementById('username');
+  usernameDiv.style.visibility = "hidden";
 }
 }
 
