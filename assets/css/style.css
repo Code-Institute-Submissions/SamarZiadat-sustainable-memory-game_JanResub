@@ -149,14 +149,32 @@ img {
 
 #username-button {
   position: relative;
+  background-color: #d69c00;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fefae0;
+  height: 6ch;
+  width: 14ch;
+  border-radius: 99vh;
+  cursor: pointer;
 }
 
 #username-paragraph {
   position: relative;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 #start-button{
   position: relative;
+  background-color: #d69c00;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fefae0;
+  height: 6ch;
+  width: 14ch;
+  border-radius: 99vh;
+  cursor: pointer;
 }
 
 /* Styling for tree information title at the bottom of the game console */
