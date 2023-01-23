@@ -129,6 +129,7 @@ img {
 }
 
 #username {
+  margin: 20px auto;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
@@ -224,6 +225,12 @@ outline: none;
   #controls {
     width: 500px;
     height: 800px;
+    left: calc(50% - 250px);
+    top: 220px;
+  }
+  #username {
+    width: 500px;
+    height: 200px;
     left: calc(50% - 250px);
     top: 220px;
   }
