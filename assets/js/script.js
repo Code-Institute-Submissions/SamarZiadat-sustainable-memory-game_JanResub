@@ -124,7 +124,7 @@ function usernameForm() {
 }
 
 /**
- * Play Button 
+ * Start Game Button 
  * 1. Create a button element with a value of 'Start Game' and an id
  * 2. The button is placed in a div called username-div as username-div's child
  * 3. When the button is clicked, the game is set up for play
@@ -136,7 +136,7 @@ function displayPlayButton() {
   playButton.innerText = 'Start Game';
   playButton.setAttribute('id', 'start-button');
   playButton.addEventListener('click', setupGame);
-  play.appendChild(playButton);
+  username.appendChild(playButton);
 }
 
 /**

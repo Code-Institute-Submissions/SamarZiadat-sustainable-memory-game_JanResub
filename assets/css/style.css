@@ -128,6 +128,37 @@ img {
   cursor: pointer;
 }
 
+#username {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  width: 350px;
+  height: fit-content;
+  top: 340px;
+  left: calc(50% - 175px);
+  background: #006868;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+#username-field {
+  position: relative;
+}
+
+#username-button {
+  position: relative;
+}
+
+#username-paragraph {
+  position: relative;
+}
+
+#start-button{
+  position: relative;
+}
+
 /* Styling for tree information title at the bottom of the game console */
 #info-title {
   left: calc(50% - 160px);
