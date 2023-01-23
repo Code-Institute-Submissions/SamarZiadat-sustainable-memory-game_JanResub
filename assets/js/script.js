@@ -122,7 +122,7 @@ function usernameForm() {
   usernameMessage.innerHTML = usernameField.value;
   usernameButton.addEventListener('click', usernameEntered);
   let consoleControls = document.getElementById('controls');
-  consoleControls.style.display = "none"; ;
+  consoleControls.style.visibility = "hidden";
 }
 
 /**
@@ -168,6 +168,8 @@ for (let i = 0; i < treeDatabase.length; i++) {
   card.setAttribute('alt', 'playing card');
   card.addEventListener('click', flipCard);
   grid.appendChild(card);
+  let consoleControls = document.getElementById('controls');
+  consoleControls.style.visibility = "visible";
 }
 }
 
