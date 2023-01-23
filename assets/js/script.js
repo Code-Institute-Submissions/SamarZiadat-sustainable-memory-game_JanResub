@@ -104,9 +104,12 @@ let endTime = [];
 */
 
 function usernameForm() {
+  let usernameInstructions = document.createElement('p');
+  usernameInstructions.setAttribute('id', 'username-instructions');
+  usernameInstructions.setAttribute('value', 'Enter your name to begin the game:');
   let usernameField = document.createElement('input');
   usernameField.setAttribute('type', 'text');
-  usernameField.setAttribute('placeholder', 'Enter Username');
+  usernameField.setAttribute('placeholder', 'Name');
   usernameField.setAttribute('maxlength', '15');
   usernameField.setAttribute('id', 'username-field');
   let usernameButton = document.createElement('button');
@@ -116,6 +119,7 @@ function usernameForm() {
   usernameButton.innerText = 'SUBMIT';
   let usernameMessage = document.createElement('p');
   usernameMessage.setAttribute('id', 'username-paragraph');
+  usernameMessage.innerText = '';
   username.appendChild(usernameField);
   username.appendChild(usernameButton);
   username.appendChild(usernameMessage);
