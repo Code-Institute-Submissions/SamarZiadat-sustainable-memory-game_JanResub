@@ -108,6 +108,7 @@ function usernameForm() {
   usernameField.setAttribute('type', 'text');
   usernameField.setAttribute('placeholder', 'Name');
   usernameField.setAttribute('maxlength', '15');
+  usernameField.setAttribute('minlength', '2');
   usernameField.setAttribute('id', 'username-field');
   let usernameButton = document.createElement('button');
   usernameButton.setAttribute('type', 'button');
