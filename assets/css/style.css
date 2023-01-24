@@ -137,11 +137,11 @@ img {
   padding: 20px 50px;
   top: 260px;
   width: 350px;
-  height: 200px;
+  height: 90px;
   left: calc(50% - 175px);
   background: #006868;
   grid-column-gap: 8px;
-  grid-row-gap: 8px;
+  grid-row-gap: 20px;
   border-radius: 15px;
 }
 
@@ -168,10 +168,11 @@ outline: none;
 #username-button, #start-button {
   position: relative;
   background-color: #d69c00;
+  margin: 8px 0;
   font-size: 0.8rem;
   font-weight: bold;
   color: #fefae0;
-  height: 6ch;
+  height: 30px;
   width: 14ch;
   border-radius: 99vh;
   cursor: pointer;
@@ -179,10 +180,8 @@ outline: none;
 
 #username-paragraph {
   position: relative;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #d69c00;
-  background-color: white;
+  font-size: 1rem;
+  margin: 14px;
 }
 
 /* Styling for tree information title at the bottom of the game console */
@@ -228,11 +227,13 @@ outline: none;
     left: calc(50% - 250px);
     top: 220px;
   }
+
   #username {
     width: 500px;
-    height: 200px;
+    height: 90px;
     left: calc(50% - 250px);
     top: 220px;
+    grid-column-gap: 8px;
   }
 
   #about-div {

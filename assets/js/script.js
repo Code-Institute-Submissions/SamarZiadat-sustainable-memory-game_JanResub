@@ -104,9 +104,6 @@ let endTime = [];
 */
 
 function usernameForm() {
-  let usernameInstructions = document.createElement('p');
-  usernameInstructions.setAttribute('id', 'username-instructions');
-  usernameInstructions.setAttribute('value', 'Enter your name to begin the game:');
   let usernameField = document.createElement('input');
   usernameField.setAttribute('type', 'text');
   usernameField.setAttribute('placeholder', 'Name');
@@ -119,11 +116,9 @@ function usernameForm() {
   usernameButton.innerText = 'SUBMIT';
   let usernameMessage = document.createElement('p');
   usernameMessage.setAttribute('id', 'username-paragraph');
-  usernameMessage.innerText = '';
   username.appendChild(usernameField);
   username.appendChild(usernameButton);
   username.appendChild(usernameMessage);
-  usernameMessage.innerHTML = usernameField.value;
   usernameButton.addEventListener('click', usernameEntered);
   let consoleControls = document.getElementById('controls');
   consoleControls.style.visibility = "hidden";
@@ -153,7 +148,14 @@ function displayPlayButton() {
  * and display a play button.
 */
 function usernameEntered() {
-  displayPlayButton()
+  displayPlayButton();
+  let usernameField = document.getElementById("username-field");
+  usernameField.remove();
+  let usernameMessage = document.getElementById("username-paragraph");
+  let usernameButton = document.getElementById("username-button");
+  usernameButton.remove();
+  let name = usernameField.value;
+  usernameMessage.innerHTML = `Hi ${name}!`;
 }
 
 /**
