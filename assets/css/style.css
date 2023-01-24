@@ -57,6 +57,22 @@ p {
   width: 350px;
 }
 
+/* Styling for game buttons board */
+#game-buttons {
+  margin: 20px auto;
+  width: 350px;
+  height: 100px;
+  background-color: #006868;
+  padding: 20px 50px;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 0;
+  top: 260px;
+  left: calc(50% - 175px);
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Styling for game controls board */
 #controls {
   margin: 20px auto;
@@ -67,16 +83,16 @@ p {
   border-radius: 15px;
   position: absolute;
   z-index: 0;
-  top: 260px;
+  top: 340px;
   left: calc(50% - 175px);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /* Styling for scoreboard in game controls board */
 #controls h3 {
   display: inline-block;
-  line-height: 60px;
+  line-height: 30px;
   width: 200px;
   height: 81px;
 }
@@ -84,6 +100,7 @@ p {
 /* Styling for replay button on game controls board */
 #restart-game {
   display: inline-block;
+  display: relative;
   background-color: #d69c00;
   font-size: 0.8rem;
   font-weight: bold;
@@ -93,6 +110,69 @@ p {
   width: 14ch;
   border-radius: 99vh;
   cursor: pointer;
+}
+
+/* Light mode toggle - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d69c00;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fefae0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #d69c00;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #d69c00;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /* Styling for buttons on game controls board - once hovered over */
@@ -109,7 +189,7 @@ p {
   margin: 20px auto;
   width: 350px;
   height: fit-content;
-  top: 340px;
+  top: 420px;
   left: calc(50% - 175px);
   background: #006868;
   grid-column-gap: 8px;
@@ -188,7 +268,7 @@ outline: none;
 #info-title {
   left: calc(50% - 160px);
   position: absolute;
-  margin: 980px 0 100px 0;
+  margin: 1060px 0 100px 0;
   width: 320px;
 }
 
@@ -200,16 +280,16 @@ outline: none;
   text-align: left;
   left: calc(50% - 160px);
   position: absolute;
-  margin: 1020px 0 100px 0;
+  margin: 1100px 0 100px 0;
   width: 320px;
-  height: 200px;
+  height: 280px;
 }
 
 /* Styling for footer */
 #footer-text {
   left: calc(50% - 175px);
   position: absolute;
-  margin: 1220px 0 150px 20px;
+  margin: 1300px 0 150px 20px;
   width: 300px;
   text-align: center;
 }
@@ -219,13 +299,21 @@ outline: none;
   #grid {
     width: 500px;
     left: calc(50% - 250px);
+    top: 380px;
   }
 
-  #controls {
+  #game-buttons {
     width: 500px;
     height: 800px;
     left: calc(50% - 250px);
     top: 220px;
+  }
+  
+  #controls {
+    width: 500px;
+    height: 800px;
+    left: calc(50% - 250px);
+    top: 300px;
   }
 
   #username {
@@ -244,13 +332,13 @@ outline: none;
 
   #info-title {
     left: calc(50% - 250px);
-    margin: 800px 0 100px 45px;
+    margin: 860px 0 100px 45px;
     width: 500px;
   }
 
   #info {
     left: calc(50% - 250px);
-    margin: 830px 0 0 45px;
+    margin: 890px 0 0 45px;
     width: 400px;
   }
 
@@ -285,70 +373,7 @@ outline: none;
   #footer-text {
     left: calc(50% - 300px);
     position: absolute;
-    margin: 1010px 0 150px 0;
+    margin: 1100px 0 150px 0;
     width: 600px;
   }
-}
-
-/* Light mode toggle - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #d69c00;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: #fefae0;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked+.slider {
-  background-color: #006868;
-}
-
-input:focus+.slider {
-  box-shadow: 0 0 1px #006868;
-}
-
-input:checked+.slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }

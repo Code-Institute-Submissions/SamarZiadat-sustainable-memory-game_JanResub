@@ -124,6 +124,8 @@ function usernameForm() {
   consoleControls.style.visibility = "hidden";
   let aboutTreeTitle = document.getElementById('info-title');
   aboutTreeTitle.style.visibility = "hidden";
+  let gameButtons = document.getElementById('game-buttons');
+  gameButtons.style.visibility = "hidden";
 }
 
 /**
@@ -180,6 +182,8 @@ for (let i = 0; i < treeDatabase.length; i++) {
   consoleControls.style.visibility = "visible";
   let aboutTreeTitle = document.getElementById('info-title');
   aboutTreeTitle.style.visibility = "visible";
+  let gameButtons = document.getElementById('game-buttons');
+  gameButtons.style.visibility = "visible";
   let usernameDiv = document.getElementById('username');
   usernameDiv.style.visibility = "hidden";
 }
