@@ -88,7 +88,7 @@ p {
   top: 340px;
   left: calc(50% - 175px);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -112,9 +112,11 @@ p {
   cursor: pointer;
 }
 
-/* Styling for replay button on game controls board */
-#timer-display {
-text-align: right;
+/* Styling for timer and matches display on game controls board */
+#timer-display, #matches {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #d69c00;
 }
 
 /* Light mode toggle - the box around the slider */
