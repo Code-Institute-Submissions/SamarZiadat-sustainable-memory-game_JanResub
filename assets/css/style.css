@@ -70,7 +70,9 @@ p {
   top: 260px;
   left: calc(50% - 175px);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 /* Styling for game controls board */
@@ -86,7 +88,8 @@ p {
   top: 340px;
   left: calc(50% - 175px);
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
 }
 
 /* Styling for scoreboard in game controls board */
@@ -99,20 +102,23 @@ p {
 
 /* Styling for replay button on game controls board */
 #restart-game {
-  display: inline-block;
-  display: relative;
   background-color: #d69c00;
   font-size: 0.8rem;
   font-weight: bold;
   color: #fefae0;
-  margin-left: auto;
   height: 6ch;
   width: 14ch;
   border-radius: 99vh;
   cursor: pointer;
 }
 
+/* Styling for replay button on game controls board */
+#timer-display {
+text-align: right;
+}
+
 /* Light mode toggle - the box around the slider */
+
 .switch {
   position: relative;
   display: inline-block;
