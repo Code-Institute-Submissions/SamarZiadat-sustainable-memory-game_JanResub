@@ -137,8 +137,6 @@ function usernameForm() {
   let usernameField = document.createElement("input");
   usernameField.setAttribute("type", "text");
   usernameField.setAttribute("placeholder", "Name");
-  usernameField.setAttribute("maxlength", "15");
-  usernameField.setAttribute("minlength", "2");
   usernameField.setAttribute("id", "username-field");
   let usernameButton = document.createElement("button");
   usernameButton.setAttribute("type", "button");
@@ -150,7 +148,7 @@ function usernameForm() {
   username.appendChild(usernameField);
   username.appendChild(usernameButton);
   username.appendChild(usernameMessage);
-  usernameButton.addEventListener("click", usernameEntered);
+  usernameButton.addEventListener("click", handleFormSubmit);
   let consoleControls = document.getElementById("controls");
   consoleControls.style.visibility = "hidden";
   let aboutTreeTitle = document.getElementById("info-title");
@@ -173,6 +171,45 @@ function displayPlayButton() {
   playButton.setAttribute("id", "start-button");
   playButton.addEventListener("click", setupGame);
   username.appendChild(playButton);
+}
+
+/**
+ * Validation for Name in Form
+ * 1. When submit button is clicked, default is to refresh page, so prevent that 
+ * 2. If the field value is empty on submission, throw alert
+ * 2. If less than 2 characters on submission, throw alert
+ * 3. If more than 15 characters on submission, throw alert
+ * 4. Use regex to only allow letters, numbers, hyphens, underscores and full stops
+ * If anything else is present on submission, throw alert
+ * 5. If all validation passes, call usernameEntered()
+ */
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+
+  let usernameFieldValue = document.getElementById("username-field").value;
+  
+  if (usernameFieldValue == "") {
+    alert("Please enter your name");
+    return false;
+  }
+
+  if (usernameFieldValue.length < 2) {
+    alert("Please enter 2 or more characters");
+    return false;
+  }
+
+  if (usernameFieldValue.length > 15) {
+    alert("Please enter no more than 15 characters");
+    return false;
+  }
+
+  let regex=new RegExp("^[0-9A-Za-z_.-]+$");
+    if (!regex.test(usernameFieldValue)) {
+      alert("This form only accepts letters, numbers, hyphens, underscores and full stops");
+      return false;
+    }
+usernameEntered()
 }
 
 /**
@@ -338,3 +375,4 @@ function setupGame() {
 
 // When window loads usernameForm() is called
 window.onload = usernameForm();
+
