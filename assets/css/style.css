@@ -294,7 +294,7 @@ outline: none;
 }
 
 /* Styling for footer */
-#footer-text {
+footer {
   left: calc(50% - 175px);
   position: absolute;
   margin: 1300px 0 150px 20px;
@@ -378,8 +378,8 @@ outline: none;
     text-align: left;
   }
 
-  #footer-text {
-    left: calc(50% - 300px);
+  footer {
+    left: calc(50% - 250px);
     position: absolute;
     margin: 1100px 0 150px 0;
     width: 600px;
