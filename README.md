@@ -156,12 +156,18 @@ This website was designed to be responsive across an array of screen sizes, brow
 ### Frameworks, Libraries & Programs Used
 
 1. [Git](https://git-scm.com/): used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-2.  [GitHub](https://github.com/):  used to store the projects code after being pushed from Git.
+
+2. [GitHub](https://github.com/): used to store the projects code after being pushed from Git.
+
 3. [The Sustainable Web Manifesto](https://www.sustainablewebmanifesto.com/): principles were applied to all development stages.
+
 4. [Sustainable Web Design](https://sustainablewebdesign.org/): strategies were applied to design process.
-4.  [Hover.css](https://ianlunn.github.io/Hover/): used on the navigation links in the header and Social Media link in the footer to add the underline while being hovered over.
-5.  [Balsamiq](https://balsamiq.com/): used to create the wireframes during the design process.
-6.  [Tech Sini](https://techsini.com/multi-mockup/):  used to generate the mockup of the final website on several apple devices.
+
+5. [sweetalert2](https://sweetalert2.github.io/): used to customise JavaScript popups. 
+
+6. [Balsamiq](https://balsamiq.com/): used to create the wireframes during the design process.
+
+7. [Tech Sini](https://techsini.com/multi-mockup/): used to generate the mockup of the final website on several apple devices.
 
 ## Testing
 
