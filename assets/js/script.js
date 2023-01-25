@@ -110,7 +110,8 @@ let cardsChosenId;
 let cardsWon;
 
 // Variables to keep track of user data for pop-up
-let endTime;
+let endTimes = [];
+let playerName;
 
 // Clicking replay button on game console calls setupGame function
 document.getElementById("restart-game").addEventListener("click", setupGame);
@@ -148,7 +149,9 @@ function usernameForm() {
   username.appendChild(usernameField);
   username.appendChild(usernameButton);
   username.appendChild(usernameMessage);
-  usernameButton.addEventListener("click", handleFormSubmit);
+  //usernameButton.addEventListener("click", handleFormSubmit);
+  //
+  username.addEventListener("submit", handleFormSubmit);
   let consoleControls = document.getElementById("controls");
   consoleControls.style.visibility = "hidden";
   let aboutTreeTitle = document.getElementById("info-title");
@@ -262,8 +265,8 @@ function usernameEntered() {
   let usernameMessage = document.getElementById("username-paragraph");
   let usernameButton = document.getElementById("username-button");
   usernameButton.remove();
-  let name = usernameField.value;
-  usernameMessage.innerHTML = `Hi ${name}!`;
+  playerName = usernameField.value;
+  usernameMessage.innerHTML = `Hi ${playerName}!`;
   displayPlayButton();
 }
 
@@ -281,6 +284,7 @@ function usernameEntered() {
  */
 
 function createBoard() {
+  grid.innerHTML="";
   for (let i = 0; i < treeDatabase.length; i++) {
     let card = document.createElement("img");
     card.setAttribute("src", "assets/images/card-back.jpg");
@@ -299,7 +303,8 @@ function createBoard() {
   }
 }
 
-/** Check for match
+/** 
+ * Check for match
  * 1. Pick out all the images created in function createBoard and call them cards
  * 2. Pull first value in array and assign it to const optionOneId
  * 3. Pull second value in array and assign it to const optionTwoId
@@ -339,7 +344,8 @@ function checkForMatch() {
   }
 }
 
-/** Flip chosen card
+/** 
+ * Flip chosen card
  * 1. If function is to prevent user from flipping open a third card if two are already flipped open
  * 2. Get data-id attribute that was produced in the createBoard function
  * 3. Push the cards from the treeDatabase based on their card ID
@@ -362,7 +368,8 @@ function flipCard() {
   }
 }
 
-/** Timer functionality
+/** 
+ * Timer functionality
  * 1. Timer starts when the setupGame() function is called and them timer ticks over every second
  * 2. Seconds and minutes passed display in the elements with ID seconds and minutes from the html file
  * 3. stopTime() function is called when user wins (the length of cards.won list is half the length
@@ -373,14 +380,14 @@ function flipCard() {
  */
 
 function startTime() {
-  let sec = 0;
+  elapsed = 0;
   function pad(val) {
     return val > 9 ? val : "0" + val;
   }
 
   timer = setInterval(function () {
-    document.getElementById("seconds").innerHTML = pad(++sec % 60);
-    document.getElementById("minutes").innerHTML = pad(parseInt(sec / 60, 10));
+    document.getElementById("seconds").innerHTML = pad(++elapsed % 60);
+    document.getElementById("minutes").innerHTML = pad(parseInt(elapsed / 60, 10));
   }, 1000);
 }
 
@@ -388,6 +395,7 @@ function stopTime() {
   if (cardsWon.length === treeDatabase.length / 2) {
     clearInterval(timer);
   }
+  endTimes.push(elapsed);
   endgameAlert();
 }
 
@@ -396,10 +404,8 @@ function tick() {
 }
 
 function endgameAlert() {
-  let usernameField = document.getElementById("username-field");
-  let name = usernameField.value;
-  alert(`Well done ${name}, you completed the game in ${elapsed} seconds!`);
-  console.log("This works!");
+  alert(`Well done ${playerName}, you completed the game in ${elapsed} seconds!`);
+  console.log(endTimes);
 }
 
 // Reset game state and set up the game to start playing
