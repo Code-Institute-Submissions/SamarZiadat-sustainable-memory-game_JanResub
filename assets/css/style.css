@@ -295,10 +295,15 @@ outline: none;
 
 /* Styling for footer */
 footer {
-  left: calc(50% - 175px);
   position: absolute;
-  margin: 1300px 0 150px 20px;
+  margin-top: 1300px;
+  left: calc(50% - 160px);
   width: 300px;
+  text-align: center;
+}
+
+#wcb {
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -383,5 +388,6 @@ footer {
     position: absolute;
     margin: 1100px 0 150px 0;
     width: 600px;
+    text-align: center;
   }
 }

@@ -190,23 +190,23 @@ function handleFormSubmit(event) {
   let usernameFieldValue = document.getElementById("username-field").value;
   
   if (usernameFieldValue == "") {
-    alert("Please enter your name");
+    Swal.fire("Please enter your name");
     return false;
   }
 
   if (usernameFieldValue.length < 2) {
-    alert("Please enter 2 or more characters");
+    Swal.fire("Please enter 2 or more characters");
     return false;
   }
 
   if (usernameFieldValue.length > 15) {
-    alert("Please enter no more than 15 characters");
+    Swal.fire("Please enter no more than 15 characters");
     return false;
   }
 
   let regex=new RegExp("^[0-9A-Za-z_.-]+$");
     if (!regex.test(usernameFieldValue)) {
-      alert("This form only accepts letters, numbers, hyphens, underscores and full stops");
+      Swal.fire("This form only accepts letters, numbers, hyphens, underscores and full stops");
       return false;
     }
 usernameEntered()
@@ -299,6 +299,7 @@ function checkForMatch() {
   if (cardsWon.length === treeDatabase.length / 2) {
     resultDisplay.textContent = "You won! 6";
     stopTime();
+    
   }
 }
 
@@ -351,10 +352,18 @@ function stopTime() {
   if (cardsWon.length === treeDatabase.length / 2) {
     clearInterval(timer);
   }
+  endgameAlert();
 }
 
 function tick() {
   elapsed++;
+}
+
+function endgameAlert() {
+  let usernameField = document.getElementById("username-field");
+  let name = usernameField.value;
+  alert(`Well done ${name}, you completed the game in ${elapsed} seconds!`);
+  console.log("This works!");
 }
 
 // Reset game state and set up the game to start playing
