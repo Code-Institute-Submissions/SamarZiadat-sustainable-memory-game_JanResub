@@ -341,11 +341,15 @@ Making a Local Clone
 
 ### Code
 
--   A tutorial by Ania Kubów inspired my code: https://www.youtube.com/watch?v=tjyDOHzKN0w
+- A tutorial by Ania Kubów inspired my code: https://www.youtube.com/watch?v=tjyDOHzKN0w
 
--   Code on how to refresh a website with JS was based on this W3Schools tutorial: https://www.w3schools.com/jsref/met_loc_reload.asp
-    
--   Code on how to use Element.innerHTML with JS was based on this Mozilla guide: https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
+- Code on how to toggle between light/dark mode was bassed on this W3Schools tutorial: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+
+- Code on how to build a slider (for light/dark mode) was based on this W3Schools Tutorial: https://www.w3schools.com/howto/howto_css_switch.asp
+  
+- Code on how to refresh a website with JS was based on this W3Schools tutorial: https://www.w3schools.com/jsref/met_loc_reload.asp
+
+- Code on how to use Element.innerHTML with JS was based on this Mozilla guide: https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
 
 - This online formatter was used to beautify my code: https://beautifier.io/
     

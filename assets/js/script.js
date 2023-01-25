@@ -174,7 +174,7 @@ function displayPlayButton() {
 }
 
 /**
- * Validation for Name in Form
+ * Validation for Name Field in Form
  * 1. When submit button is clicked, default is to refresh page, so prevent that 
  * 2. If the field value is empty on submission, throw alert
  * 2. If less than 2 characters on submission, throw alert
@@ -218,7 +218,7 @@ usernameEntered()
  * the form disappears from view (using remove)
  * 2. The inputted text (their name) then appears in the userField paragraph
  * and the user is greated by name
- * 2. The is also playFunction() is called to create and display a play button.
+ * 2. displayPlayButton() is called to create and display a play button.
  */
 function usernameEntered() {
   let usernameField = document.getElementById("username-field");
