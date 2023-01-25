@@ -93,14 +93,14 @@ let endTime = [];
 
 /**
  * Ask User for Username
- * 1. Create an text type input element with a placeholder, a maximum input length
+ * 1. Create an text type input element with a placeholder, a maximum nd maximuminput length
  * and an id
  * 2. Create a button element with a value of 'Submit' and an id
  * 3. Create a paragraph element with an id
- * 4. These three elements are placed in HTML div called grid as grid's children
- * 5. When cards are clicked, they flip over 
- * 6. All these cards are placed in HTML div called grid as grid's children
- * 7. When the button is clicked, the user input is printed in the paragraph element
+ * 4. These three elements are placed in HTML div called username as username's children
+ * 5. Event listener is set for submit button so that usernameEntered() is called
+ * 6. Game play elements are hidden while the user fills in the form so they can't start 
+ * playing until they have finished filling in the form
 */
 
 function usernameForm() {
@@ -146,12 +146,14 @@ function displayPlayButton() {
 }
 
 /**
- * When the user enters and submits their username via usernameForm(), the inputted text 
- * appears in the userField paragraph, and the playFunction() is called to create
- * and display a play button.
+ * Username Entered
+ * 1. When the user enters and submits their username via usernameForm(), 
+ * the form disappears from view (using remove)
+ * 2. The inputted text (their name) then appears in the userField paragraph 
+ * and the user is greated by name
+ * 2. The is also playFunction() is called to create and display a play button.
 */
 function usernameEntered() {
-  displayPlayButton();
   let usernameField = document.getElementById("username-field");
   usernameField.remove();
   let usernameMessage = document.getElementById("username-paragraph");
@@ -159,6 +161,7 @@ function usernameEntered() {
   usernameButton.remove();
   let name = usernameField.value;
   usernameMessage.innerHTML = `Hi ${name}!`;
+  displayPlayButton();
 }
 
 /**
@@ -169,6 +172,9 @@ function usernameEntered() {
  * 4. Give each card a data ID to loop (0 to last card in array)
  * 5. When cards are clicked, they flip over 
  * 6. All these cards are placed in HTML div called grid as grid's children
+ * 7. All the game controls tha were set to hidden in usernameForm() are 
+ * made visible again. 
+ * 8. The username div that holds the form is also hidden during game play
 */
 
 function createBoard() {
@@ -264,11 +270,10 @@ if (cardsChosen.length === 2) {
 }
 
 /** Timer functionality
- * 1. Timer starts when page is loaded and ticks over every second
- * 2. Seconds and minutes passed display in the elements with ID 
- * seconds and minutes from the html file
- * 3. Timer is set to stop when user wins (the length of cards.won list is half the length 
- * of the tree database)
+ * 1. Timer starts when the setupGame() function is called and them timer ticks over every second
+ * 2. Seconds and minutes passed display in the elements with ID seconds and minutes from the html file
+ * 3. stopTime() function is called when user wins (the length of cards.won list is half the length 
+ * of the tree database), which stops the timer
  * 4. When the timer function runs, it calls tick() to increment the elapsed variable by 1.
  * Variable increments each time the timer fires (which is every second for as long as it runs)
  * This lets us know how many seconds it took until the user won the game
