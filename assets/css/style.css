@@ -302,11 +302,6 @@ footer {
   text-align: center;
 }
 
-#wcb {
-  margin-top: 1rem;
-  text-align: center;
-}
-
 /* Responsive styling for wider screens */
 @media only screen and (min-width: 1000px) {
   #grid {

@@ -190,23 +190,59 @@ function handleFormSubmit(event) {
   let usernameFieldValue = document.getElementById("username-field").value;
   
   if (usernameFieldValue == "") {
-    Swal.fire("Please enter your name");
+    Swal.fire({
+      title: "Error",
+      text: "Please enter your name",
+      icon: "error",
+      iconColor: "#f97800",
+      background: "#fefae0",
+      color: "#d69c00",
+      confirmButtonColor: "#006868",
+      confirmButtonText: "Try again",
+    });
     return false;
   }
 
   if (usernameFieldValue.length < 2) {
-    Swal.fire("Please enter 2 or more characters");
+    Swal.fire({
+      title: "Error",
+      text: "Please enter 2 or more characters",
+      icon: "error",
+      iconColor: "#f97800",
+      background: "#fefae0",
+      color: "#d69c00",
+      confirmButtonColor: "#006868",
+      confirmButtonText: "Try again",
+    });
     return false;
   }
 
   if (usernameFieldValue.length > 15) {
-    Swal.fire("Please enter no more than 15 characters");
+    Swal.fire({
+      title: "Error",
+      text: "Please enter no more than 15 characters",
+      icon: "error",
+      iconColor: "#f97800",
+      background: "#fefae0",
+      color: "#d69c00",
+      confirmButtonColor: "#006868",
+      confirmButtonText: "Try again",
+    });
     return false;
   }
 
   let regex=new RegExp("^[0-9A-Za-z_.-]+$");
     if (!regex.test(usernameFieldValue)) {
-      Swal.fire("This form only accepts letters, numbers, hyphens, underscores and full stops");
+      Swal.fire({
+        title: "Error",
+        text: "This form only accepts letters, numbers, hyphens, underscores and full stops",
+        icon: "error",
+        iconColor: "#f97800",
+        background: "#fefae0",
+        color: "#d69c00",
+        confirmButtonColor: "#006868",
+        confirmButtonText: "Try again",
+      });
       return false;
     }
 usernameEntered()
