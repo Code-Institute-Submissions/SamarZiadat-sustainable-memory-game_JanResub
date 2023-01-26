@@ -241,7 +241,7 @@ let usernameMessage = document.getElementById("username-paragraph");
 let usernameButton = document.getElementById("username-button");
 usernameButton.remove();
 playerName = usernameField.value;
-usernameMessage.innerHTML = `Hi ${playerName} !`;
+usernameMessage.innerHTML = `Hi ${playerName}!`;
 displayPlayButton();
 }
 
