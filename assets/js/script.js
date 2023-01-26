@@ -409,7 +409,6 @@ function tick() {
 }
 
 let timesList = document.createElement('ul');
-document.getElementById('list-container').append(timesList)
 
 function createTimesList() {
 for (let entry of endTimes) {
