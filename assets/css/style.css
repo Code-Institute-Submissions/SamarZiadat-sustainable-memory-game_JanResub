@@ -39,7 +39,6 @@ h3 {
   font-size: 1.05rem;
   font-weight: 600;
   color: #d69c00;
-  text-align: left;
 }
 
 p {
@@ -297,9 +296,13 @@ outline: none;
 footer {
   position: absolute;
   margin-top: 1300px;
-  left: calc(50% - 160px);
+  left: calc(50% - 135px);
   width: 300px;
   text-align: center;
+}
+
+#footer-text {
+  margin-bottom: 8px;
 }
 
 /* Responsive styling for wider screens */
@@ -381,8 +384,9 @@ footer {
   footer {
     left: calc(50% - 250px);
     position: absolute;
-    margin: 1100px 0 150px 0;
-    width: 600px;
+    margin: 1100px 0 100px 0;
+    width: 450px;
     text-align: center;
+    left: calc(50% - 220px);
   }
 }

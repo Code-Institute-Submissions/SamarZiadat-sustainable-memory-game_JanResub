@@ -396,7 +396,7 @@ function stopTime() {
   }
   endTimes.push(
     {
-      time: new Date(),
+      time: new Date().toLocaleString(),
       elapsed: elapsed
     }
     )
@@ -415,8 +415,8 @@ for (let entry of endTimes) {
     let rowHTML = `
     <li>
       <div class="list-data">
-       <span>${entry.time}</span>
-       <span>${entry.elapsed}<p>seconds</p></span
+       <span>On ${entry.time} you won in </span>
+       <span>${entry.elapsed} seconds</span
     </div>
     </li>
     `
@@ -435,6 +435,9 @@ function endgameAlert() {
     background: "#fefae0",
     color: "#d69c00",
     showCloseButton: true,
+    showConfirmButton: false,
+    icon: "success",
+    iconColor: "#006868",
   });
 }
 
