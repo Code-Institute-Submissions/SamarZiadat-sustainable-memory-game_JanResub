@@ -7,87 +7,63 @@
 const treeDatabase = [{
   name: "Ash",
   description: "Ash trees are tall, domed trees can reach up to 40 metres in height. The leaves are arranged in pairs whilst the single-winged seeds grow in bunches. The bark starts smooth and greenish-grey before turning grey and fissured with age.",
-  imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/ash-botanical.jpg",
-}
-
-,
+  imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/ash-botanical.jpg"
+},
 {
   name: "Ash",
   description: "Ash trees are tall, domed trees can reach up to 40 metres in height. The leaves are arranged in pairs whilst the single-winged seeds grow in bunches. The bark starts smooth and greenish-grey before turning grey and fissured with age.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/ash-botanical.jpg",
-}
-
-,
+},
 {
   name: "Beech",
   description: "This is a Beech tree. Mature trees of this species have a dense canopy made up of many branches. Its husks split to release two triangular seeds which can be eaten or roasted to make a type of coffee. The bark is smooth, grey and delicate – making it a popular tree for lovers to carve their initials into.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/beech-botanical.jpg",
-}
-
-,
+},
 {
   name: "Beech",
   description: "This is a Beech tree. Mature trees of this species have a dense canopy made up of many branches. Its husks split to release two triangular seeds which can be eaten or roasted to make a type of coffee. The bark is smooth, grey and delicate – making it a popular tree for lovers to carve their initials into.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/beech-botanical.jpg",
-}
-
-,
+},
 {
   name: "Corsican pine",
   description: "The Corsican pine is a slender, conical tree that can reach up to 27 metres tall with horizontal branches. Its needles are long, grouped in pairs and have a distinctive twist. Its fissured, dark greyish-brown bark breaks off easily.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/corsican-pine-botanical.jpg",
-}
-
-,
+},
 {
   name: "Corsican pine",
   description: "The Corsican pine is a slender, conical tree that can reach up to 27 metres tall with horizontal branches. Its needles are long, grouped in pairs and have a distinctive twist. Its fissured, dark greyish-brown bark breaks off easily.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/corsican-pine-botanical.jpg",
-}
-
-,
+},
 {
   name: "Douglas fir",
   description: "The Douglas fir can grow to be very tall, reaching up to 60 metres in Britain. It has soft needles with two grey bands underneath and oval shaped cones that hang downwards. Its bark is reddish-brown, fissured and corky.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/douglas-fir-botanical.jpg",
-}
-
-,
+},
 {
   name: "Douglas fir",
   description: "The Douglas fir can grow to be very tall, reaching up to 60 metres in Britain. It has soft needles with two grey bands underneath and oval shaped cones that hang downwards. Its bark is reddish-brown, fissured and corky.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/douglas-fir-botanical.jpg",
-}
-
-,
+},
 {
   name: "Hazel",
   description: "The Hazel tree usually resembles a shrub, but can reach seven metres if left uncut. In October ripe nuts enclosed in leafy bracts appear, whilst in late winter, male flowers form ‘lambs-tail’ catkins. The bark is smooth, shiny brown with conspicuous yellow lenticels and scaly patches.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/hazel-botanical.jpg",
-}
-
-,
+},
 {
   name: "Hazel",
   description: "The Hazel tree usually resembles a shrub, but can reach seven metres if left uncut. In October ripe nuts enclosed in leafy bracts appear, whilst in late winter, male flowers form ‘lambs-tail’ catkins. The bark is smooth, shiny brown with conspicuous yellow lenticels and scaly patches.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/hazel-botanical.jpg",
-}
-
-,
+},
 {
   name: "Hybrid larch",
   description: "The Hybrid larch can grow to 40 metres in height. It grows deciduous needles in rosettes on short shoots, and reddish purple flowers which form cylindrical cones with rounded scales. Its grey-brown bark is fissured into regular plates.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/hybrid-larch-botanical.jpg",
-}
-
-,
+},
 {
   name: "Hybrid larch",
   description: "The Hybrid larch can grow to 40 metres in height. It grows deciduous needles in rosettes on short shoots, and reddish purple flowers which form cylindrical cones with rounded scales. Its grey-brown bark is fissured into regular plates.",
   imgLink: "https://forestryandland.gov.scot/images/learn/treespecies/hybrid-larch-botanical.jpg",
-}
-
-,
+},
 ];
 
 // Tutorial (by Ania Kubów) used: https://www.youtube.com/watch?v=tjyDOHzKN0w
@@ -335,9 +311,7 @@ if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
       cards[optionTwoId].setAttribute("src", "assets/images/card-back.jpg");
       cardsChosen = [];
       cardsChosenId = [];
-}
-
-    , 500);
+}, 500);
 }
 
 resultDisplay.textContent = cardsWon.length;
@@ -408,9 +382,7 @@ function pad(val) {
 timer = setInterval(function() {
     document.getElementById("seconds").innerHTML = pad(++elapsed % 60);
     document.getElementById("minutes").innerHTML = pad(parseInt(elapsed / 60, 10));
-}
-
-  , 1000);
+}, 1000);
 }
 
 function stopTime() {
