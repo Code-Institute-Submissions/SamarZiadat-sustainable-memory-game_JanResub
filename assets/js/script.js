@@ -395,12 +395,33 @@ function stopTime() {
   if (cardsWon.length === treeDatabase.length / 2) {
     clearInterval(timer);
   }
-  endTimes.push(elapsed);
+  endTimes.push(
+    {
+      time: new Date(),
+      elapsed: elapsed
+    }
+    )
   endgameAlert();
 }
 
 function tick() {
   elapsed++;
+}
+
+let timesList = document.createElement('ul');
+
+function createTimesList {
+for (let entry of endTimes) {
+    let rowHTML = `
+    <li>
+      <div class="row">
+       <span>${entry.time}</span>
+       <span>${entry.elapsed}</span
+    </div>
+    </li>
+    `
+  timesList.innerHTML += rowHTML
+}
 }
 
 function endgameAlert() {
