@@ -400,6 +400,7 @@ function stopTime() {
       elapsed: elapsed
     }
     )
+  createTimesList();
   endgameAlert();
 }
 
@@ -408,16 +409,15 @@ function tick() {
 }
 
 let timesList = document.createElement('ul');
-
-console.log(timesList);
+document.getElementById('list-container').append(timesList)
 
 function createTimesList() {
 for (let entry of endTimes) {
     let rowHTML = `
     <li>
-      <div class="row">
+      <div class="list-data">
        <span>${entry.time}</span>
-       <span>${entry.elapsed}</span
+       <span>${entry.elapsed}<p>seconds</p></span
     </div>
     </li>
     `
@@ -425,15 +425,17 @@ for (let entry of endTimes) {
 }
 }
 
+console.log(timesList);
+console.log(endTimes);
+
 function endgameAlert() {
 
   Swal.fire({
-    title: "You win!",
-    text: "Well done " + playerName + ", you completed the game in " + elapsed + " seconds!" + timesList,
+    title: "Well done " + playerName + ", you completed the game in " + elapsed + " seconds!",
+    html: timesList,
     background: "#fefae0",
     color: "#d69c00",
-    confirmButtonColor: "#006868",
-    confirmButtonText: "Try again",
+    showCloseButton: true,
   });
 }
 
