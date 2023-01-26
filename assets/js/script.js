@@ -149,8 +149,7 @@ function usernameForm() {
   username.appendChild(usernameField);
   username.appendChild(usernameButton);
   username.appendChild(usernameMessage);
-  //usernameButton.addEventListener("click", handleFormSubmit);
-  //
+  usernameButton.addEventListener("click", handleFormSubmit);
   username.addEventListener("submit", handleFormSubmit);
   let consoleControls = document.getElementById("controls");
   consoleControls.style.visibility = "hidden";
@@ -410,7 +409,9 @@ function tick() {
 
 let timesList = document.createElement('ul');
 
-function createTimesList {
+console.log(timesList);
+
+function createTimesList() {
 for (let entry of endTimes) {
     let rowHTML = `
     <li>
@@ -420,13 +421,20 @@ for (let entry of endTimes) {
     </div>
     </li>
     `
-  timesList.innerHTML += rowHTML
+  timesList.innerHTML += rowHTML;
 }
 }
 
 function endgameAlert() {
-  alert(`Well done ${playerName}, you completed the game in ${elapsed} seconds!`);
-  console.log(endTimes);
+
+  Swal.fire({
+    title: "You win!",
+    text: "Well done " + playerName + ", you completed the game in " + elapsed + " seconds!" + timesList,
+    background: "#fefae0",
+    color: "#d69c00",
+    confirmButtonColor: "#006868",
+    confirmButtonText: "Try again",
+  });
 }
 
 // Reset game state and set up the game to start playing
