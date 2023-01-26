@@ -169,7 +169,7 @@ function displayPlayButton() {
   let playButton = document.createElement("button");
   playButton.setAttribute("type", "button");
   playButton.setAttribute("value", "Submit");
-  playButton.innerText = "START GAME";
+  playButton.innerText = "PLAY";
   playButton.setAttribute("id", "start-button");
   playButton.addEventListener("click", setupGame);
   username.appendChild(playButton);
