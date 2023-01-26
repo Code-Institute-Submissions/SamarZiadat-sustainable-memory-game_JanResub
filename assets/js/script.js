@@ -122,12 +122,11 @@ element.classList.toggle("light-mode");
 
 /**
 * Ask User for Username
-* 1. Create an text type input element with a placeholder, a maximum nd maximuminput length
-* and an id
+* 1. Create an text type input element with a placeholder and an id
 * 2. Create a button element with a value of 'Submit' and an id
 * 3. Create a paragraph element with an id
 * 4. These three elements are placed in HTML div called username as username's children
-* 5. Event listener is set for submit button so that usernameEntered() is called
+* 5. Event listener is set for submit button so that handleFormSubmit() is called
 * 6. Game play elements are hidden while the user fills in the form so they can't start
 * playing until they have finished filling in the form
 */
@@ -158,10 +157,10 @@ gameButtons.style.visibility = "hidden";
 }
 
 /**
-* Start Game Button
-* 1. Create a button element with a value of 'Start Game' and an id
-* 2. The button is placed in a div called username-div as username-div's child
-* 3. When the button is clicked, the game is set up for play
+* Display Play Button
+* 1. Create a button element with a value of 'PLAY' and an id
+* 2. The button is placed in a div called username as username's child
+* 3. When the button is clicked, setupGame() is called
 */
 function displayPlayButton() {
 let playButton = document.createElement("button");
@@ -181,6 +180,7 @@ username.appendChild(playButton);
 * 3. If more than 15 characters on submission, throw alert
 * 4. Use regex to only allow letters, numbers, hyphens, underscores and full stops
 * If anything else is present on submission, throw alert
+* Note that all alerts are customised with sweetalert2
 * 5. If all validation passes, call usernameEntered()
 */
 
@@ -247,7 +247,7 @@ if (!regex.test(usernameFieldValue)) {
   return false;
 }
 
-usernameEntered()
+usernameEntered();
 }
 
 /**
@@ -256,7 +256,7 @@ usernameEntered()
 * the form disappears from view (using remove)
 * 2. The inputted text (their name) then appears in the userField paragraph
 * and the user is greated by name
-* 2. displayPlayButton() is called to create and display a play button.
+* 2. displayPlayButton() is called to create and display a play button
 */
 function usernameEntered() {
 let usernameField = document.getElementById("username-field");
@@ -315,7 +315,7 @@ for (let i = 0; i < treeDatabase.length; i++) {
 * 5. If cards don't match wait 500 milliseconds and then flip cards back over to be played again
 * 6. Clear cardsChosen and cardsChosenId so we're ready to start flipping again
 * 7. If amount cardsWon deeply equals (the amount cards in our database/2),
-* we know we have won - alert user and stop timer
+* we know we have won - alert user and call stopTime()
 */
 
 function checkForMatch() {
@@ -335,7 +335,7 @@ if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
       cards[optionTwoId].setAttribute("src", "assets/images/card-back.jpg");
       cardsChosen = [];
       cardsChosenId = [];
-    }
+}
 
     , 500);
 }
@@ -351,13 +351,14 @@ if (cardsWon.length === treeDatabase.length / 2) {
 
 /** 
 * Flip chosen card
-* 1. If function is to prevent user from flipping open a third card if two are already flipped open
+* 1. If function is to prevent user from flipping open a third card if 
+* two are already flipped open
 * 2. Get data-id attribute that was produced in the createBoard function
 * 3. Push the cards from the treeDatabase based on their card ID
 * Once this card is located we will get its name
 * 4. Push card ID into separate array called cardsChosenId
 * 5. Add an image to card selected, to flip it based on its card ID
-* 6. If cards chosen is now 2 cards, the two cards will be checked if they are a match
+* 6. If cards chosen is now 2 cards, checkforMatch() is called
 */
 
 function flipCard() {
@@ -377,13 +378,24 @@ if (cardsChosen.length === 2) {
 
 /** 
 * Timer functionality
-* 1. Timer starts when the setupGame() function is called and them timer ticks over every second
-* 2. Seconds and minutes passed display in the elements with ID seconds and minutes from the html file
-* 3. stopTime() function is called when user wins (the length of cards.won list is half the length
-* of the tree database), which stops the timer
-* 4. When the timer function runs, it calls tick() to increment the elapsed variable by 1.
-* Variable increments each time the timer fires (which is every second for as long as it runs)
+* 1. Timer starts when the setupGame() function is called and them timer 
+* ticks over every second
+* 2. Seconds and minutes passed display in the elements with ID seconds 
+* and minutes from the html file
+* 3. When the timer function runs, it increment the elapsed variable by 1.
+* Variable increments each time the timer fires (which is every second for 
+* as long as it runs)
 * This lets us know how many seconds it took until the user won the game
+* 3. Timer stops when user wins game
+* This happens when stopTime() is called in checkForMatch() function
+* 4. Timer variable is cleared
+* 5. New end time is added to beginning of endTimes array so the times are 
+* in descending order
+* 6. time and elasped variable are updated so data can be used by 
+* createTimesList() function
+* 7. createTimesList() function is called to create a times list
+for the game just played by the user
+* 8. endGameAlert() function is called for custom pop up of times list/s
 */
 
 function startTime() {
@@ -396,7 +408,7 @@ function pad(val) {
 timer = setInterval(function() {
     document.getElementById("seconds").innerHTML = pad(++elapsed % 60);
     document.getElementById("minutes").innerHTML = pad(parseInt(elapsed / 60, 10));
-  }
+}
 
   , 1000);
 }
@@ -408,8 +420,8 @@ if (cardsWon.length === treeDatabase.length / 2) {
 
 endTimes.unshift({
   time: new Date().toLocaleString(),
-  elapsed: elapsed
-}) createTimesList();
+  elapsed: elapsed}); 
+createTimesList();
 endgameAlert();
 }
 
@@ -419,17 +431,31 @@ elapsed++;
 
 let timesList = document.createElement('ul');
 
+/** 
+* A list is generated to display back to the user 
+* List includes the time it took user to win the game, as well
+* as the date and time that they achieved this time
+* If they replay the game more than once under the same name, 
+* a history of these achievements are stored and displayed back to them
+* This info is displayed to user with a pop up via endgameAlert() function
+*/
+
 function createTimesList() {
-timesList.innerHTML = ""
+timesList.innerHTML = "";
 
 for (let entry of endTimes) {
-  let rowHTML = ` <li><div class="list-data"><span>On ${entry.time} you won in </span><span>${entry.elapsed} seconds</span </div></li>`
+  let rowHTML = ` <li><div class="list-data"><span>On ${entry.time} you won in </span><span>${entry.elapsed} seconds</span </div></li>`;
   timesList.innerHTML += rowHTML;
 }
 }
 
-console.log(timesList);
-console.log(endTimes);
+/** 
+* Custom alert created with sweetalerts2 to congratulate
+* user for their win and let them know the time it took 
+* achieve that win 
+* If they replay the game more than once under the same name, 
+* a history of these achievements are displayed back to them
+*/
 
 function endgameAlert() {
 
@@ -458,7 +484,7 @@ cardsChosenId = [];
 cardsWon = [];
 endTime = [];
 
-elapsed = 0
+elapsed = 0;
 }
 
 // When window loads usernameForm() is called
