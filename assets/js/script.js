@@ -394,7 +394,7 @@ function stopTime() {
   if (cardsWon.length === treeDatabase.length / 2) {
     clearInterval(timer);
   }
-  endTimes.push(
+  endTimes.unshift(
     {
       time: new Date().toLocaleString(),
       elapsed: elapsed
@@ -409,8 +409,8 @@ function tick() {
 }
 
 let timesList = document.createElement('ul');
-
 function createTimesList() {
+  timesList.innerHTML = ""
 for (let entry of endTimes) {
     let rowHTML = `
     <li>
