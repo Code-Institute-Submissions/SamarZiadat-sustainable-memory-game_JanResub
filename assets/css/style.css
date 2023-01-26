@@ -112,7 +112,8 @@ p {
 }
 
 /* Styling for timer and matches display on game controls board */
-#timer-display, #matches {
+#timer-display,
+#matches {
   font-size: 1.05rem;
   font-weight: 600;
   color: #d69c00;
@@ -249,10 +250,11 @@ img {
 }
 
 #username-field:focus {
-outline: none;
+  outline: none;
 }
 
-#username-button, #start-button {
+#username-button,
+#start-button {
   position: relative;
   background-color: #d69c00;
   margin: 8px 0;
@@ -319,7 +321,7 @@ footer {
     left: calc(50% - 250px);
     top: 220px;
   }
-  
+
   #controls {
     width: 500px;
     height: 800px;

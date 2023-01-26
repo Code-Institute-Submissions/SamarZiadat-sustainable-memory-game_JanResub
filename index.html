@@ -8,43 +8,45 @@
   <link rel="icon" href="assets/images/favicon.png">
   <title>Scotland's Tree Species: A Memory Game</title>
 </head>
-  <header>
-    <h1>Scotland's Tree Species:<br>A Memory Game</h1>
-  </header>
-  <section id="about">
-    <div id="about-div">
-      <h2><b>Learn about the many trees that make up Scotland's forests.</b></h2>
-      <p><br>Instructions: <i>Enter your name to begin the game. Click on the cards to flip them. Match identical trees to reveal information about them at the bottom of the console. Keep replaying to start identifying trees in the wild.</i></p>
-    </div>
-  </section>
-  <section id="game-console">
-    <div id="game-buttons">
-      <button id="restart-game" class="button">
-        REPLAY
-      </button>
-      <label class="switch">
-        <input type="checkbox" onclick="modeToggle()">
-        <span class="slider round"></span>
-      </label>
-    </div>
-    <div id="controls">
-      <div id="matches">Matches: <span id="result">0</span>/6<span id="win"></span></div>
-      <span id="timer-display">Timer: <label id="minutes">00</label>:<label id="seconds">00</label></span>
-    </div>
-    <form id="username"></form>
-    <div id="grid"></div>
-    <h3 id="info-title">The tree you just matched:</h3>
-    <div id="info"></div>
-    <div id="list-container"></div>
-  </section>
-  <footer>
-    <div><h3 id="footer-text">This website is designed with the environment in mind.</h3></div>
-    <div id="wcb" class="carbonbadge wcb-d"></div>
-  </footer>
+<header>
+  <h1>Scotland's Tree Species:<br>A Memory Game</h1>
+</header>
+<section id="about">
+  <div id="about-div">
+    <h2><b>Learn about the many trees that make up Scotland's forests.</b></h2>
+    <p><br>Instructions: <i>Enter your name to begin the game. Click on the cards to flip them. Match identical trees to reveal information about them at the bottom of the console. Keep replaying to start identifying trees in the wild.</i></p>
+  </div>
+</section>
+<section id="game-console">
+  <div id="game-buttons">
+    <button id="restart-game" class="button">
+      REPLAY
+    </button>
+    <label class="switch">
+      <input type="checkbox" onclick="modeToggle()">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div id="controls">
+    <div id="matches">Matches: <span id="result">0</span>/6<span id="win"></span></div>
+    <span id="timer-display">Timer: <label id="minutes">00</label>:<label id="seconds">00</label></span>
+  </div>
+  <form id="username"></form>
+  <div id="grid"></div>
+  <h3 id="info-title">The tree you just matched:</h3>
+  <div id="info"></div>
+  <div id="list-container"></div>
+</section>
+<footer>
+  <div>
+    <h3 id="footer-text">This website is designed with the environment in mind.</h3>
+  </div>
+  <div id="wcb" class="carbonbadge wcb-d"></div>
+</footer>
 
-  <script src="assets/js/script.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+<script src="assets/js/script.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 </body>
 
 </html>
