@@ -9,15 +9,9 @@ View the live project [here](https://samarziadat.github.io/sustainable-memory-ga
 
 Scotland's Tree Species is a website that aims to educate and inform its visitors on the tree species that you can find in Scotland. The website will be targeted towards those with an interest in the natural environment, Scotland, and memory games. The website will function as a host to the memory game as well as further information on these tree species. The game itself will serve as a memory card game that teaches participants to recognise the tree species through repeated attempts to match images of the trees through memory. When a user makes a successful match, information about the tree such as its name and a description appear; this allows optional further learning for the user. In addition, the website will be designed with climate change in mind by drawing from sustainable web design strategy.
 
-  
-
-![Responsive Mockup](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/responsive-mockup.png?raw=true)
-
-  
+![Responsive Mockup](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/mockup.png?raw=true)
 
 ## Table of Contents
-
-  
 
 - [User Experience (UX)](#)
 
@@ -32,8 +26,6 @@ Scotland's Tree Species is a website that aims to educate and inform its visitor
 - [Deployment](#)
 
 - [Credits](#)
-
-  
 
 ## User experience (UX)
 
@@ -91,15 +83,11 @@ Sustainable web design is an approach to designing web services that puts people
 
 The only images used for this website are the favicon and the illustrations on the playing cards. The favicon is a tree, which descriptive of the game, and it's a nice touch of detail that give the website a polished look. The images of the trees and the back of the card come from the [Scottish Government's Forestry and Land website](https://forestryandland.gov.scot/learn/trees) I used these images for the cards, because they were specially commissioned by an artist for educational purposes by the government - so they are aesthetically pleasing accurate drawings, that are stylistically consistent with each other, and are all trees you can find in Scotland. This was hard to find copyright-free, and is important to user experience.
 
-  
-
 In terms of sustainable design principles; image files make up the majority of file size on most web interfaces, and so using images efficiently is one of the best strategies to reduce page weight and energy use. It also helps improve web performance. I have ensured efficient use of imagery that all images have a justifiable purpose. Detail and colour contribute to image file size, so I have used simple illustrations with shallow depth of field and a reduced colour palettes (instead of photographs of trees for example).
 
 ### Colour scheme
 
 The colour scheme I chose is inspired by a [70's colour palette from the color-hex website](https://www.color-hex.com/color-palette/73067). I chose this palette, because:
-
-  
 
 - it went well with the images I used for the playing cards
 
@@ -107,27 +95,17 @@ The colour scheme I chose is inspired by a [70's colour palette from the color-h
 
 - it's a dark palette, which is a more sustainable option that light palettes (explained below)
 
-  
-
-The only changes I made to the palette was to swap out the green colour for a cream colour to increase readability/accessibility of some features.
-
-  
+The only changes I made to the palette was to swap out the green colour for a cream colour to increase readability/accessibility of some features. 
 
 ![Colour palette ](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/color-palette.png?raw=true)
 
-  
-
 #### Why are dark colour schemes a more sustainable option?
-
-  
 
 - Many new devices using Organic Light-Emitting Diode (OLED) technology. A key difference of OLED screens is that instead of having a single backlight that is always on (modern LED screens), each pixel is itself a tiny LED lightbulb that lights up individually when it is needed. This delivers better picture quality, but it also means that dark colours use less electricity because less of the screen is illuminated. So, dark colours in web design is a way of reducing energy consumption of digital services.
 
-  
 
 - Power consumption is even more important for mobile devices than it is for computers, because power consumption directly impacts battery life. So, reducing screen energy by using dark colour schemes is not only good for the environment, but also provides a practical benefit to the end user by extending the battery life of their phone.
 
-  
 
 - In a study by Google, they found that while white pixels use the most energy, blue pixels use considerably more than red and green. So the colours chosen in this website design were considered not just for brand presentation, user experience and accessibility, but for the environment and for mobile battery life.
 
@@ -135,121 +113,134 @@ The only changes I made to the palette was to swap out the green colour for a cr
 
 Custom font files can significantly increase the file size of web pages; increasing energy use and causing slow performance. As a result I have only used system fonts that are already on the users device: Arial, with Helvetica and sans-serif as backups. These fonts benefit the user in that it increases the website performance, and they are crisp and easy to read fonts which is appropriate for legibility and accessibility.
 
-  
 
 ### Video and audio
 
 No video, audio or animated images were used, as this usually constitutes the largest use of energy on websites. These features also wouldn't increase value for the users in the context of this project. Excessive motion can sometimes cause dizziness, nausea, and vertigo for people with vestibular disorders, so it's also an accessibility consideration to use video and animated images sparingly.
 
-  
 
 ### Responsive design
 
-This website was designed to be responsive across an array of screen sizes, browsers, and devices. When the content and the platform it is displayed on are incongruous, users become frustrated, so this is a user experience consideration. Web design that is not responsive will also cause users to waste time and energy trying to accomplish tasks - including over-consuming power over simple tasks, so it's an environmental consideration too.
-
-  
+This website was designed to be responsive across an array of screen sizes, browsers, and devices. When the content and the platform it is displayed on are incongruous, users become frustrated, so this is a user experience consideration. Web design that is not responsive will also cause users to waste time and energy trying to accomplish tasks - including over-consuming power over simple tasks, so it's an environmental consideration too.  
 
 ### Wireframes
 
 ![wireframes](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/wireframes.png?raw=true)
-
   
 
 ## Features
 
-  
 
 ### Existing Features
 
-  
 
--  **F01 Website Introduction**
+-  **F01 Website introduction** 
+	- This feature includes a header with the website title, as well as an about section that includes the objective of the game and the game instructions. <br>
+![Website intro](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/title.png?raw=true)
 
-- This feature includes a header with the website title, as well as an about section that includes the objective of the game and the game instructions.
+	- This feature is responsive, supporting legibility on all screens. On small screens it shrinks in width and increases in height.
 
-- This feature is responsive, supporting legibility on all screens. On small screens it shrinks in width and increases in height.
+	- The colours used draw from the colour scheme of the website for consistency. The title colour is an eye-catching orange which is used no where else on the website in order to grab the users attention.
 
-- The colours used draw from the colour scheme of the website for consistency. The title colour is an eye-catching orange which is used no where else on the website in order to grab the users attention.
+	- Three different font sizes are used to demarcate the difference in content.
+	
+-  **F02 Name form**
 
-- Three different font sizes are used to demarcate the difference in content.
+	- When the website first loads, the user is met with a form that requests their name. This allows for a more personal user experience. <br>
+![Name form](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/username.png?raw=true)
+	- The form can be submitted via the submit button or by pressing the enter key - this is enabled via javascript to improve user experience and eliminate unexpected outcomes.
+	
+	- Form validation is created with JavaScript. All alerts on the website are customised pop-ups created with alertsweet2 to improve user experience. The pop-ups are cohesive with the website colour scheme:
+		- If the user tries to submit a blank form:<br>
+![Blank form validation](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/name-validation.png?raw=true)
+		- If the user tries to submit less than 2 characters:<br>
+![Min character form validation](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/name-validation-minlength.png?raw=true)		
+		- If the user tries to submit more than 15 characters:<br>
+![Blank form validation](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/name-validation-maxlength.png?raw=true)		
+		
+		- If the user tries to submit invalid characters:<br>
+![Invalid characters form validation](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/name-validation-characters.png?raw=true)
 
-  
+-  **F03 Personalised greeting and play button**
+	- Once the user submits a valid entry into the name field, a personalised greeting appears featuring their name. This allows for a more customised user experience, and sets the tone as friendly and playful.
+<br>![Greeting and play button](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/play-button.png?raw=true)
+	
+	- A play button also appears, allowing the user access to the game. If they click this button the game console loads. 
+	- The styling of the form and this greeting screen are in keeping with the game console for consistency.
+-  **F04 Game console**
 
-![Feature 1](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-1.png?raw=true)
+	- The game console is teal coloured, which is the most eye-catching colour in the website colour scheme. To further grab the users attention it is the only teal feature on the website. The corners of the console are also rounded to give it a playful design.
+<br> ![Console](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/game-console.png?raw=true)
 
--  **F02 Game console**
+	- The game console holds other features: the game controls, game buttons, the game board, and the information panel at the bottom.
 
-- The game console is teal coloured, which is the most eye-catching colour in the website colour scheme. To further grab the users attention it is the only teal feature on the website. The corners of the console are also rounded to give it a playful design.
+	- The console is responsive, and so changes in size on different screen sizes (e.g. on mobile devices it becomes narrower and longer).
 
-- The game console holds other features: the game controls, the game board, and the information panel at the bottom.
+-  **F05 Game buttons and controls**
+	- The game buttons and controls sit within the game console and include a replay button, a light mode switch, a scoreboard and a timer. <br>
+<b>Game buttons:	</b>
+	- The replay button, once clicked, allows the user to play again under the same name that they previously entered. The button has rounded corners to match the console. When hovered over, the replay button has a box shadow effect - indicating to the user that it can be clicked. To reinforce that it can be clicked, the cursor becomes a pointer when hovering over the button.
+	- The switch allows the user to toggle the website into 'light mode' - this is primarily as accessibility feature. The website is set to 'dark mode' by default for its sustainability advantages. This is a preview of what happens when the switch is toggled:<br>
+![Light mode](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/light-mode.png?raw=true)
+	
+		<b>Game controls:	</b>
+	- The scoreboard counts up the amount of matches the user has made as they are making them. Once they have finished the game, the scoreboard tells the user that they have won.
+	- The timer counts upwards in seconds once the game has begun. This records how long it took the user to win the game.
+	- This is a preview of how the game controls interact during game play. The matches scoreboard counts up the matches made and the timer ticks upwards:<br>
+![Game play](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/during-play.png?raw=true)
+	-  The colours of the game controls draw from the colour scheme of the website for consistency.
+	- The game controls are responsive, and so change in size on different screen sizes (e.g. on mobile devices they become smaller).
 
-- The game console is responsive, and so changes in size on different screen sizes (e.g. on mobile devices it becomes narrower and longer).
+-  **F06 Game board**
 
-![Feature 2](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-2.png?raw=true)
+	- The game board is directly under the game controls on the game console. It includes a grid of 12 playing cards (6 cards that each have a duplicate to match). 
+	
+	- When the game starts, the playing cards are facing with the back of the card facing up towards the user. When the cards are clicked, they flip over to display the tree illustration on the other side. Only two cards can be flipped over to be compared at once. If they are a match, they stay flipped over, if they are not a match they both flip back to their original state. This can be repeated until all cards are matched.
 
--  **F03 Game controls**
+	- Below is a preview of the game board once all cards have been matched, and so have all been flipped over:<br>
+![End game](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/end-game.png?raw=true)
 
-- The game controls sit within the game console include a scoreboard and a replay button.
+	- The game board is also teal like the console, to attract and keep the attention of the user.
 
-- The scoreboard counts up the amount of matches the user has made as they are making them. Once they have finished the game, the scoreboard tells the user that they have won.
+	- To make the playing cards recognisable as playing cards to the user, the edges are rounded, they have a cream border and each one has an identical 'care back'. To encourage the user to engage with the cards, the cards also feature a box-shadow to suggest that they are 3D, and when hovered over the cursor becomes a pointer. The back of the cards (which face up when the game starts) include an illustration of brown tree bark. The same illustrator also designed the drawings of the trees which are on the other side of the cards.
 
-- The replay button, once clicked, restarts the game so the user can play again or restart from the beginning. The button has rounded corners to match the console. When hovered over, the replay button has a box shadow effect - indicating to the user that it can be clicked. To reinforce that it can be clicked, the cursor becomes a pointer when hovering over the button.
+	- This section is responsive. The game board itself is narrower and longer on mobile. With the use of flexbox, the cards also display differently on different screen sizes; on wider screens the cards display in 4 columns and on mobile they display is a narrower 3 columns.
 
-- The colours of the game controls draw from the colour scheme of the website for consistency.
+-  **F07 Information panel**
 
-- The game controls are responsive, and so change in size on different screen sizes (e.g. on mobile devices they become smaller).
+	- On the bottom of the game console is an information panel. <br>
+![Info panel](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/info-panel.png?raw=true)
 
-![Feature 3 at beginning of gameplay](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-3-start.png?raw=true)
+	- Before the game starts, this panel only displays text that says "The tree you just matched:". Once the first successful match is made, information about the tree matched appears. For every new match made, the previous information is wiped and new information about the latest tree matched appears. This information panel is designed to further teach the user about the trees they are beginning to recognise through matching/memorisation.
 
-![Feature 3 during gameplay](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-3-play.png?raw=true)
+	- The text about the trees is cream coloured to increase legibility and accessibility against the dark console background.
 
-![Feature 3 endgame](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-3-endgame.png?raw=true)
+- **F08 End game pop-up**
+	- When the user matches all the cards on the game board they win and so the game ends. When the game ends a pop-up appears to congratulate the user on their win.
+	- The first time the user wins a game a personalised message appears including their name, the date and time of this win, and how long in seconds it took them to win the game. <br>
+![Feature 5](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/win-alert.png?raw=true)
 
--  **F04 Game board**
+	- When the user wins a game several times back to back, the same personalised message appears, but this time it also includes their past 'win times'. This is to encourage the user to keep playing in order to beat their last score/s. <br>
+![Feature 5](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/win-alert-multiple.png?raw=true)
 
-- The game board is directly under the game controls on the game console.
+- **F09 Footer**
 
-- It includes a grid of 12 playing cards (6 cards that each have a duplicate to match). When the game starts, the playing cards are facing with the back of the card facing up towards the user. When the cards are clicked, they flip over to display the tree illustration on the other side. Only two cards can be flipped over to be compared at once. If they are a match, they stay flipped over, if they are not a match they both flip back to their original state. This can be repeated until all cards are matched.
-
-- The game board is also teal like the console, to attract and keep the attention of the user.
-
-- To make the playing cards recognisable as playing cards to the user, the edges are rounded, they have a cream border and each one has an identical 'care back'. To encourage the user to engage with the cards, the cards also feature a box-shadow to suggest that they are 3D, and when hovered over the cursor becomes a pointer. The back of the cards (which face up when the game starts) include an illustration of brown tree bark. The same illustrator also designed the drawings of the trees which are on the other side of the cards.
-
-- This section is responsive. The game board itself is narrower and longer on mobile. With the use of flexbox, the cards also display differently on different screen sizes; on wider screens the cards display in 4 columns and on mobile they display is a narrower 3 columns.
-
-![Feature 4 during play](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-4.png?raw=true)
-
--  **F05 Information panel**
-
-- On the bottom of the game console is an information panel. Before the game starts, this panel only displays text that says "The tree you just matched:". Once the first successful match is made, information about the tree matched appears. For every new match made, the previous information is wiped and new information about the latest tree matched appears. This information panel is designed to further teach the user about the trees they are beginning to recognise through matching/memorisation.
-
-- The text about the trees is cream coloured to increase legibility and accessibility against the dark console background.
-
-  
-
-![Feature 5 at endgame](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-5.png?raw=true)
-
--  **F06 Footer**
-
-- The footer is simple and paired back, featuring only one line of text. It lets the user know that environmental considerations were taken when creating this website, which will increase the confidence of the users in the website. It will also highlight to the users that a holistic approach has been taken to the development of the resulting website.
-
+	- The footer is simple and paired back, featuring only one line of text. It lets the user know that environmental considerations were taken when creating this website, which will increase the confidence of the users in the website. It will also highlight to the users that a holistic approach has been taken to the development of the resulting website. <br>
 ![Feature 5](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-6.png?raw=true)
 
   
 
-### Features which could be implemented in the future
-
-  
+### Features which could be implemented in the future  
 
 - More playing cards can be added to the stack so that there are more trees to learn from.
+
+- A leaderboard using either localStorage or perhaps the Google Sheets API.
 
 - Social media links, a logo and contact details could be added to the website if marketing materials and channels were produced.
 
 - A badge to prove the website's sustainability could also be added (e.g. [The website qualifies for this badge](https://www.websitecarbon.com/badge/))
 
-- A green web host could be considered from [The Green Hosting Directory](https://www.thegreenwebfoundation.org/directory/) to. improve the positive environmental impact of the website.
-
-  
+- A green web host could be considered from [The Green Hosting Directory](https://www.thegreenwebfoundation.org/directory/) to. improve the positive environmental impact of the website. 
 
 ## Technologies Used
 
