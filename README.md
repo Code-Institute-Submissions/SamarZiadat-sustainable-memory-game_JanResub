@@ -12,25 +12,15 @@ Scotland's Tree Species is a website that aims to educate and inform its visitor
 ![Responsive Mockup](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/mockup.png?raw=true)
 
 ## Table of Contents
-
 - [User Experience (UX)](#)
-
 - [Design](#)
-
 - [Features](#)
-
 - [Technologies Used](#)
-
 - [Testing](#)
-
 - [Deployment](#)
-
 - [Credits](#)
 
 ## User experience (UX)
-
-  
-
 **User Stories**
 
   
@@ -226,7 +216,7 @@ This website was designed to be responsive across an array of screen sizes, brow
 - **F09 Footer**
 
 	- The footer is simple and paired back, featuring only one line of text. It lets the user know that environmental considerations were taken when creating this website, which will increase the confidence of the users in the website. It will also highlight to the users that a holistic approach has been taken to the development of the resulting website. <br>
-![Feature 5](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/feature-6.png?raw=true)
+![Feature 5](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/footer.png?raw=true)
 
   
 
@@ -244,16 +234,9 @@ This website was designed to be responsive across an array of screen sizes, brow
 
 ## Technologies Used
 
-  
-
 ### Languages Used
-
-  
-
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
-
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
   
@@ -263,17 +246,11 @@ This website was designed to be responsive across an array of screen sizes, brow
   
 
 1. [Git](https://git-scm.com/): used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-
 2. [GitHub](https://github.com/): used to store the projects code after being pushed from Git.
-
 3. [The Sustainable Web Manifesto](https://www.sustainablewebmanifesto.com/): principles were applied to all development stages.
-
 4. [Sustainable Web Design](https://sustainablewebdesign.org/): strategies were applied to design process.
-
 5. [sweetalert2](https://sweetalert2.github.io/): used to customise JavaScript popups. 
-
 6. [Balsamiq](https://balsamiq.com/): used to create the wireframes during the design process.
-
 7. [Tech Sini](https://techsini.com/multi-mockup/): used to generate the mockup of the final website on several apple devices.
 
   
@@ -361,7 +338,7 @@ Breakdown of results:
 
 ![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-1.png?raw=true)
 
-![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-3.png?raw=true)
+![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-2.png?raw=true)
 
 ![enter image description here](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/ecograder-4.png?raw=true)
 
@@ -435,8 +412,6 @@ i. As a Frequent Visitor, I want to be able to learn more about the trees that I
 
 ### Test Cases and Results
 
-  
-
 - The below table details the test cases that were used, the results and a cross-reference to the Feature ID that each test case exercised (click image to open):
 
   
@@ -450,13 +425,9 @@ i. As a Frequent Visitor, I want to be able to learn more about the trees that I
   
 
 - Testing has been carried out on the following browsers :
-
 - Chrome Version 107.0.5304.87
-
 - Edge Version 107.0.1418.24
-
 - Firefox Version 94.0.1
-
 - Safari on macOS (Safari Version 15.6)
 
   
@@ -608,9 +579,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - This online formatter was used to beautify my code: https://beautifier.io/
 
 ### Media
-
-  
-
 - This tree Favicon was used for the website: https://favicon.io/emoji-favicons/deciduous-tree
 
 - Illustrations of Scottish trees are borrowed from the Scottish Government's Forestry and Land website: https://forestryandland.gov.scot/learn/trees
