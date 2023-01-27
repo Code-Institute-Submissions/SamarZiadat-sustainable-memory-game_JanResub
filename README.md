@@ -1,5 +1,5 @@
 
-# Scotland's Tree Species: An Educational Memory Game
+# <p  align="center">Scotland's Tree Species: An Educational Memory Game</p>
 
   
 
@@ -12,13 +12,12 @@ Scotland's Tree Species is a website that aims to educate and inform its visitor
 ![Responsive Mockup](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/mockup.png?raw=true)
 
 ## Table of Contents
-- [User Experience (UX)](#)
-- [Design](#)
-- [Features](#)
-- [Technologies Used](#)
-- [Testing](#)
-- [Deployment](#)
-- [Credits](#)
+- [User Experience (UX)](https://github.com/SamarZiadat/sustainable-memory-game#user-experience-ux)
+- [Features](https://github.com/SamarZiadat/sustainable-memory-game#features)
+- [Technologies Used](https://github.com/SamarZiadat/sustainable-memory-game#technologies-used)
+- [Testing](https://github.com/SamarZiadat/sustainable-memory-game#testing)
+- [Deployment](https://github.com/SamarZiadat/sustainable-memory-game#deployment)
+- [Credits](https://github.com/SamarZiadat/sustainable-memory-game#credits)
 
 ## User experience (UX)
 **User Stories**
@@ -61,7 +60,7 @@ ii. As a Returning Visitor, I want to start recognising different Scottish tree 
 
 i. As a Frequent Visitor, I want to be able to learn more about the trees that I am now recognising.
 
-## Design
+### Design
 
 This project is designed with sustainability in mind. The internet currently produces approximately 3.8% of global carbon emissions, which are rising in line with our hunger to consume more data. Communications tech will emit more carbon by 2025 than any country except China, India, and the U.S. This is not inevitable; if it is used wisely, web technology has the potential to bring huge benefits to society and the environment.
 
@@ -116,7 +115,8 @@ This website was designed to be responsive across an array of screen sizes, brow
 ### Wireframes
 
 ![wireframes](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/wireframes.png?raw=true)
-  
+ 
+[back to top](https://github.com/SamarZiadat/sustainable-memory-game#scotlands-tree-species-an-educational-memory-game)
 
 ## Features
 
@@ -167,8 +167,9 @@ This website was designed to be responsive across an array of screen sizes, brow
 	- The console is responsive, and so changes in size on different screen sizes (e.g. on mobile devices it becomes narrower and longer).
 
 -  **F05 Game buttons and controls**
-	- The game buttons and controls sit within the game console and include a replay button, a light mode switch, a scoreboard and a timer. <br>
-<b>Game buttons:	</b>
+	- The game buttons and controls sit within the game console and include a replay button, a light mode switch, a scoreboard and a timer. 
+	
+		<b>Game buttons:	</b>
 	- The replay button, once clicked, allows the user to play again under the same name that they previously entered. The button has rounded corners to match the console. When hovered over, the replay button has a box shadow effect - indicating to the user that it can be clicked. To reinforce that it can be clicked, the cursor becomes a pointer when hovering over the button.
 	- The switch allows the user to toggle the website into 'light mode' - this is primarily as accessibility feature. The website is set to 'dark mode' by default for its sustainability advantages. This is a preview of what happens when the switch is toggled:<br>
 ![Light mode](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/light-mode.png?raw=true)
@@ -218,7 +219,7 @@ This website was designed to be responsive across an array of screen sizes, brow
 	- The footer is simple and paired back, featuring only one line of text. It lets the user know that environmental considerations were taken when creating this website, which will increase the confidence of the users in the website. It will also highlight to the users that a holistic approach has been taken to the development of the resulting website. <br>
 ![Feature 5](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/footer.png?raw=true)
 
-  
+ [back to top](https://github.com/SamarZiadat/sustainable-memory-game#scotlands-tree-species-an-educational-memory-game)
 
 ### Features which could be implemented in the future  
 
@@ -231,6 +232,8 @@ This website was designed to be responsive across an array of screen sizes, brow
 - A badge to prove the website's sustainability could also be added (e.g. [The website qualifies for this badge](https://www.websitecarbon.com/badge/))
 
 - A green web host could be considered from [The Green Hosting Directory](https://www.thegreenwebfoundation.org/directory/) to. improve the positive environmental impact of the website. 
+
+[back to top](https://github.com/SamarZiadat/sustainable-memory-game#scotlands-tree-species-an-educational-memory-game)
 
 ## Technologies Used
 
@@ -253,7 +256,7 @@ This website was designed to be responsive across an array of screen sizes, brow
 6. [Balsamiq](https://balsamiq.com/): used to create the wireframes during the design process.
 7. [Tech Sini](https://techsini.com/multi-mockup/): used to generate the mockup of the final website on several apple devices.
 
-  
+[back to top](https://github.com/SamarZiadat/sustainable-memory-game#scotlands-tree-species-an-educational-memory-game)  
 
 ## Testing
 
@@ -356,13 +359,13 @@ Breakdown of results:
 
 i. As a First Time Visitor, I want to easily understand the main purpose of the site.
 
-- a. Upon entering the site, users are automatically greeted with a clean and easily readable title and website introduction. Underneath there are game instructions and the game console follows.
+- a. Upon entering the site, users are automatically greeted with a clean and easily readable title and website introduction. Underneath there are game instructions and the name form. 
 
 - b. When scrolling to the bottom of the website, which is purposely not very long, the user reaches the footer, which tells them that the website has been developed with the planet in mind. This tells them more about the website and aims to leave them feeling good about their experience.
 
 ii. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
 
-- a. The user can scroll down to navigate the whole website, leading down to the footer (which is the final feature).
+- a. The user can scroll down to navigate the whole website, leading down to the footer (which is the final feature). Upon  arrival of the website they are welcomed to enter and submit the form. If invalid entries are entered, pop-ups let the user know exactly what they did incorrectly. Once they submit a valid name, the user is navigated to a personal greeting and play button - giving them pause to begin play when they are ready. When they click play, the game begins. They are alerted once they've won. A replay button is clearly positioned if they would like to play again.
 
 iii. As a First Time Visitor, I want to be able to access the website easily from any device.
 
@@ -374,7 +377,7 @@ iv. As a First Time Visitor, I want to be able to play the game on the website f
 
 - b. The game is simple to follow and is based on a popular model of game.
 
-- c. On every device, the game console is physically available on the website as you land on the page, so it doesn't require any navigation to find it.
+- c. The game is easy to navigate on every device, and this navigation is consistent from one device to another.
 
   
 
@@ -384,7 +387,7 @@ iv. As a First Time Visitor, I want to be able to play the game on the website f
 
 i. As a Returning Visitor, I want to be able to play the game on the website multiple times in a row.
 
-- a. Once you start playing, the scoreboard begins to tally up your successful 'matches'. Once you win, the game is over, and the scoreboard lets you know that you have won. Therefore, it's easily understood by users once the game starts, is in ongoing play, and when the game ends.
+- a. Once you start playing, the scoreboard begins to tally up your successful 'matches' and the timer begibs ticking upwards. Once you win, the game is over, and the scoreboard and a pop-up lets you know that you have won. The pop up lets the user know the date and time in which they won and how many seconds it took them until they won. Therefore, it's easily understood by users once the game starts, is in ongoing play, and when the game ends.
 
   
 
@@ -398,7 +401,7 @@ ii. As a Returning Visitor, I want to start recognising different Scottish tree 
 
 - a. The game is designed as both an enjoyable experience but also as an educational tool that tests and improves your memory. Upon playing the game several times, users should begin to recognise the trees that they are matching together. This will lead the users to begin to recognise shapes, colours and features of each tree both in the game and outside in the world.
 
-- b. When two identical cards are successfully matched the scoreboard update - helping the user keep track of how many matches they've made. This is also a motivational tool to encourage them to keep playing until they have won.
+- b. When two identical cards are successfully matched the scoreboard updates - helping the user keep track of how many matches they've made and their game progress. The timer also records how long it took the user until they won the game. The pop-up displays the users 'past times', which is also a motivational tool to encourage them to keep playing so they keep beating their past end game times.
 
   
 
@@ -414,8 +417,6 @@ i. As a Frequent Visitor, I want to be able to learn more about the trees that I
 
 - The below table details the test cases that were used, the results and a cross-reference to the Feature ID that each test case exercised (click image to open):
 
-  
-
 ![test-case-table](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/testing-results/testing-table.png?raw=true)
 
   
@@ -430,7 +431,7 @@ i. As a Frequent Visitor, I want to be able to learn more about the trees that I
 - Firefox Version 94.0.1
 - Safari on macOS (Safari Version 15.6)
 
-  
+[back to top](https://github.com/SamarZiadat/sustainable-memory-game#scotlands-tree-species-an-educational-memory-game)  
 
 ## Deployment
 
@@ -542,7 +543,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 [Click Here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) for more info on cloning.
 
-  
+ [back to top](https://github.com/SamarZiadat/sustainable-memory-game#scotlands-tree-species-an-educational-memory-game) 
 
 ## Credits
 
@@ -590,3 +591,5 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
   
 
 Thank you to my mentor Brian Macharia who gave me excellent advice and feedback on how to plan and execute this project and who provided me with lots of pointers and resources to help with design, coding and testing. Thank you to the tutors at the Code Institute who advised me during the building and debugging process.
+
+[back to top](https://github.com/SamarZiadat/sustainable-memory-game#scotlands-tree-species-an-educational-memory-game)
