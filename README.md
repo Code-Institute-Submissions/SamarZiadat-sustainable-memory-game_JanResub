@@ -135,7 +135,8 @@ This website was designed to be responsive across an array of screen sizes, brow
 
 
 -  **F01 Website introduction** 
-	- This feature includes a header with the website title, as well as an about section that includes the objective of the game and the game instructions. <br>
+	- This feature includes a header with the website title, as well as an about section that includes the objective of the game and the game instructions. 
+    <br>
 ![Website intro](https://github.com/SamarZiadat/sustainable-memory-game/blob/master/documentation/supporting-images/title.png?raw=true)
 
 	- This feature is responsive, supporting legibility on all screens. On small screens it shrinks in width and increases in height.
